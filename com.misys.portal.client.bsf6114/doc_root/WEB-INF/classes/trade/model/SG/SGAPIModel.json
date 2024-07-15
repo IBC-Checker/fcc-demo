@@ -1,0 +1,237 @@
+{
+   "createFromOptions":"lc_type",
+   "createFromOptions": {
+    "write_api_field": "create_option",
+    "read_api_field": {
+      "type": "additionalFields",
+      "section": "additionalFields",
+      "field": "create_option"
+    }
+  },
+   "expiryDate":"exp_date",
+   "customerReference":"cust_ref_id",
+   "beneficiaryReference":"beneficiary_reference",
+   "awbNumber":"bol_number",
+   "mode":"shipping_mode",
+   "systemID": "ref_id",
+   "shippingDetails":"shipping_by",
+   "applicantEntity":"entity",
+   "applicantName":"applicant_name",
+   "applicantFirstAddress":"applicant_address_line_1",
+   "applicantSecondAddress":"applicant_address_line_2",
+   "applicantThirdAddress":"applicant_dom",
+   "applicantFourthAddress":"applicant_address_line_4",
+   "transBeneficiaryEntity":"beneficiary_name",
+   "beneAbbvName" : "beneficiary_abbv_name",
+   "transBeneficiaryFirstAddress":"beneficiary_address_line_1",
+   "transBeneficiarySecondAddress":"beneficiary_address_line_2",
+   "transBeneficiaryThirdAddress":"beneficiary_dom",
+   "transBeneficiaryFourthAddress":"beneficiary_address_line_4",
+   "bankNameList":{
+      "write_api_field":"issuing_bank_abbv_name",
+      "read_api_field":{
+         "type":"complex",
+         "section":"issuing_bank",
+         "field":"abbv_name"
+      }
+   },
+   "issuerReferenceList":"applicant_reference",
+   "currency":"sg_cur_code",
+   "currencySG":"sg_cur_code",
+   "guaranteeAmt":"sg_amt",
+   "lcAmount": "lc_amt",
+   "sgDescOfGoods":{
+      "write_api_field":"goods_desc",
+      "read_api_field":{
+         "type":"complex",
+         "section":"goods_desc",
+         "field":"text"
+      }
+   },
+   "crossRefParentTnxId": {
+  	"read_api_field": {
+  	  "type": "complex",
+      "section": "cross_references",
+      "field": {
+      	"type": "complex",
+        "section": "cross_reference",
+        "field": "tnx_id"
+      }
+  	}
+  },
+   "returnComments": {
+	"write_api_field": "return_comments",
+    "read_api_field": {
+      "type": "complex",
+      "section": "return_comments",
+      "field": "text"
+    }
+  },
+   "principalAct":"principal_act_no",
+   "feeAct":"fee_act_no",
+   "otherInst":{
+      "write_api_field":"free_format_text",
+      "read_api_field":{
+         "type":"complex",
+         "section":"free_format_text",
+         "field":"text"
+      }
+   },
+   "TnxTypeCode":"tnx_type_code",
+   "transactionStatus":"transactionStatus",
+   "attachments":"attachments",
+   "fileUploadTable": "attachments",
+   "feesAndCharges":{
+      "read_api_field":{
+         "type":"array",
+         "section":"charges",
+         "field":{
+            "type":"array",
+            "section":"charge",
+            "field":[
+               "chrg_code",
+               "additional_comment",
+               "amt",
+               "status",
+               "chrg_code",
+               "cur_code"
+            ]
+         }
+      }
+   },
+   "transactionType":"tnx_type_code",
+	"channelsId": { 
+      "read_api_field": "ref_id" 
+     },
+   "bankReference":"bo_ref_id",
+   "issueDate":"iss_date",
+   "beneficiaryName":"beneficiary_name",
+   "SgBeneficiaryName":"beneficiary_name",
+   "applicationDate":"appl_date",
+   "bankComments":{
+      "read_api_field":{
+         "type":"complex",
+         "section":"bo_comment",
+         "field":"text"
+      }
+   },
+   "issuingBankaddress":{
+      "read_api_field":{
+         "type":"complex",
+         "section":"issuing_bank",
+         "field":"address_line_1"
+      }
+   },
+   "issuingBanksecondaddress":{
+      "read_api_field":{
+         "type":"complex",
+         "section":"issuing_bank",
+         "field":"address_line_2"
+      }
+   },
+   "BICCODE":{
+      "read_api_field":{
+         "type":"complex",
+         "section":"issuing_bank",
+         "field":"iso_code"
+      }
+   },
+   "customerInstructionText":{
+      "write_api_field":"free_format_text",
+      "read_api_field":{
+         "type":"complex",
+         "section":"free_format_text",
+         "field":"text"
+      }
+   },
+   "issuingBankName":{
+      "read_api_field":{
+         "type":"complex",
+         "section":"issuing_bank",
+         "field":"name"
+      }
+   },
+   "releaseDate":"release_dttm",
+    "customerInstructions": {
+    "read_api_field": {
+      "type": "complex",
+      "section": "free_format_text",
+      "field": "text"
+    }
+  },
+   "companyName": {
+      "write_api_field":"company_name",
+      "read_api_field": {
+         "type": "additionalFields",
+         "section": "additionalFields",
+         "field": "company_full_name"
+      }
+   },
+   "productCode":"product_code",
+   "reportingStatus":"prod_stat_code",
+   "bankReferenceView":"bo_ref_id",
+   "actionRequired":"action_req_code",
+   "customerReleaseDate":"release_dttm",
+	"boReleaseDate": "bo_release_dttm",
+   "lcRefId": "lc_ref_id",
+   "crossRefTypeCode": "lc_type",
+  	"sgOption": {
+      "write_api_field": "sg_option"
+    },
+    "boLcRefId": {
+     "write_api_field": "bo_lc_ref_id",
+     "read_api_field": {
+      "type": "additionalFields",
+      "section": "additionalFields",
+      "field": "bo_lc_ref_id"
+    }
+    },
+    "parentReference": {
+  	"write_api_field": "parent_ref_id",
+  	"read_api_field": {
+  	  "type": "complex",
+      "section": "cross_references",
+      "field": {
+      	"type": "complex",
+        "section": "cross_reference",
+        "field": "ref_id"
+      }
+  	}
+  	},
+    "disposalInstructions": "sub_tnx_type_code",
+  "consentResponse": {
+	 "read_api_field": "sub_tnx_type_code"
+   },
+  "actionRequiredEvent": "action_req_code",
+  "bankAttachmentTable": {
+  	"read_api_field": "attachments"
+  },
+  "subTnxTypeCode": "sub_tnx_type_code",
+  "subTransactionType" : "sub_tnx_type_code",
+  "parentBankComment":{
+     "read_api_field": {
+	      "type": "complex",
+	      "section": "parent_tnx_details",
+	      "field": {
+		  	"type": "complex",
+		    "section": "bo_comment",
+		    "field": "text"
+		   }
+  	}
+   },
+   "sgCardDetails": {
+    "read_api_field": {
+      "type": "cardData",
+      "section": "parent_details"
+    }
+  },
+  "liabAmount": "sg_liab_amt",
+  "HijriExpDate": {
+        "write_api_field": "HijriExpDate",
+        "read_api_field": {
+            "type": "additionalFields",
+            "section": "additionalFields",
+            "field": "HijriExpDate"
+        }
+	}
+}

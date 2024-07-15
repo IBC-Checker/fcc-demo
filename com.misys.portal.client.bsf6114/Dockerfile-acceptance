@@ -1,0 +1,11 @@
+ARG docker_registry=p21d11107559001.azurecr.io/
+FROM ${docker_registry}base/unifiedtestframework_chrome:UTF_Version_6.1
+
+COPY ./acceptance /Tests
+
+RUN cd /Tests/ \
+&& pip install -U -r requirements.txt --no-cache-dir \
+&& pip install -U -r fcc_base/GenericConfiguration/requirements.txt --no-cache-dir \
+&& chmod 755 fcc_base/drivers/chromedriver
+
+ENTRYPOINT ["pabot"]

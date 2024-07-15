@@ -1,0 +1,133 @@
+#__          __              _             _
+#\ \        / /             (_)           | |
+# \ \  /\  / /_ _ _ __ _ __  _ _ __   __ _| |
+#  \ \/  \/ / _` | '__| '_ \| | '_ \ / _` | |
+#   \  /\  / (_| | |  | | | | | | | | (_| |_|
+#    \/  \/ \__,_|_|  |_| |_|_|_| |_|\__, (_)
+#                                     __/ |
+#                                    |___/
+# Below you have example of how to define global ingress for microservice which use internal (.io) domain.
+# For public domain (.cloud) you should request Traffic Manager from FO team.
+# You probably do not need to configure global ingress if your app is region-specific.
+# Please consult that with your Architect.
+#
+ingresses:
+  default:
+    class: ffdcdev-kong-public
+    extraAnnotations:
+      konghq.com/override: '{{ .name | default (include "focore.service.name" $) }}'
+
+services:
+  default:
+    extraAnnotations:
+      konghq.com/override: '{{ .name | default (include "focore.service.name" $) }}'
+
+kongEnabled: false
+
+deployments:
+  app:
+    docker:
+      image: fcc/fcconcloud
+      tag: __DOCKER_TAG__
+    replicas: 2
+    extraSecretItems:
+    - name: application-properties
+      key: application.properties
+      path: application.properties
+      mountPath: /config
+      readOnly: true
+    memory:
+      limits: 4096Mi
+      request: 2048Mi
+    cpu:
+      limits: 3000m
+      request: 2000m
+    readinessProbe:
+      path: /test
+      port: 8080
+    livenessProbe:
+      path: /test
+      port: 8080
+
+extraSecrets:
+  application.properties: |-
+    ffdc.chassis.httpLogging.enabled=true
+    ffdc.chassis.httpLogging.includeHeaders=false
+    ffdc.chassis.httpLogging.includePayload=true
+    ffdc.chassis.httpLogging.includeQueryString=true
+    ffdc.chassis.httpLogging.maxPayloadLength=10000
+    logging.config=classpath:logback-otel-json.xml
+    management.security.enabled=false
+    management.endpoints.web.exposure.include=prometheus,health
+    management.endpoints.web.base-path=/
+    management.endpoints.web.path-mapping.prometheus=metrics
+    management.endpoints.web.path-mapping.health=actuator/health
+    management.endpoint.health.show-details=always
+    spring.resources.static-locations=classpath:/META-INF/resources/WEB-INF/classes/
+    management.server.port=8080
+    spring.security.oauth2.resourceserver.jwt.issuer-uri=https://api.preprod.fusionfabric.cloud/login/v1
+    security.basic.enabled=false
+    management.security.enabled=false
+    spring.main.banner-mode=off
+    servlet.portal.name=portal
+    servlet.portal.endpoint.name=portal
+    appdata.location=/static
+    turbine.configuration.file=config/configuration.xml
+    spring.resources.cache.cachecontrol.no-cache=true
+    resource.loader=jar
+    jar.resource.loader.class=org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+    jar.runtime.log.logsystem.class=org.apache.velocity.runtime.log.SimpleLog4JLogSystem
+    jar.runtime.log.logsystem.log4j.category=velocity
+    jar.resource.loader.cache=false
+    input.encoding=UTF-8
+traces:
+  otel:
+    enabled: true
+    
+tests:
+ acceptance:
+   tags: ''
+   fccUrl: to-be-overridden
+   fccCorpId: to-be-overridden
+   fccUsername: to-be-overridden
+   fccPassword: to-be-overridden
+   processes: to-be-overridden
+   testSuite: to-be-overridden
+
+
+test:
+  pods:
+    - docker:
+        image: fcc/test/fcconcloud-acceptance
+        tag: __DOCKER_TAG__
+      extraEnvs:
+        - name: FCC_APP_URL
+          value: "{{ .Values.tests.acceptance.fccUrl }}"
+        - name: FCC_CORP_ID
+          value: "{{ .Values.tests.acceptance.fccCorpId }}"
+        - name: FCC_USERNAME
+          value: "{{ .Values.tests.acceptance.fccUsername }}"
+        - name: FCC_PASSWORD
+          value: "{{ .Values.tests.acceptance.fccPassword }}"
+      hookWeight: "2"
+      extraAnnotations:
+        type: acceptance|ci
+      args: ["--processes", "{{ .Values.tests.acceptance.processes }}", "-v", "HEADLESS:TRUE", "-d", "/tmp/artifacts", "-x", "results.xml", "{{ .Values.tests.acceptance.testSuite }}"]
+        #  platform: cucumber
+      #  args: ["--threads","2"]
+
+  #   - docker:
+  #       image: fcc/test/fcconcloud-performance
+  #       tag: __DOCKER_TAG__
+  #     hookWeight: "1"
+  #     extraEnvs:
+  #       - name: TOKEN
+  #         value: "1234567890"
+  #     extraAnnotations:
+  #       type: performance|ci
+  #       platform: gatling
+  # #  args:
+  # #  - "{{ printf \"-%s\" .Values.test.envName }}"
+  # #  - "-metrics"
+  # #  - scenarios.yml
+  # #  - perf-smoke.yml

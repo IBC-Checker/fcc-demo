@@ -1,0 +1,999 @@
+{
+  "channelsId": {
+	 "read_api_field": "ref_id"
+	},
+  "issuerReferenceHeader": "applicant_reference",
+  "beneficiaryName": "beneficiary_name",
+  "lcBeneficiaryName": "beneficiary_name",
+  "bankComments": {
+    "read_api_field": {
+      "type": "complex",
+      "section": "bo_comment",
+      "field": "text"
+    }
+  },
+  "returnComments": {
+	"write_api_field": "return_comments",
+    "read_api_field": {
+      "type": "complex",
+      "section": "return_comments",
+      "field": "text"
+    }
+  },
+  "applicantMessageEntity": {
+      "read_api_field": "entity"
+  },
+  "parentReference": {
+  	"write_api_field": "parent_ref_id",
+  	"read_api_field": {
+  	  "type": "complex",
+      "section": "cross_references",
+      "field": {
+      	"type": "complex",
+        "section": "cross_reference",
+        "field": "ref_id"
+      }
+  	}
+  },
+  "crossRefParentTnxId": {
+  	"read_api_field": {
+  	  "type": "complex",
+      "section": "cross_references",
+      "field": {
+      	"type": "complex",
+        "section": "cross_reference",
+        "field": "tnx_id"
+      }
+  	}
+  },
+  "parentBoRefId": {
+	"write_api_field": "parent_bo_ref_id",
+	"read_api_field": {
+		"type": "additionalFields",
+	    "section": "additionalFields",
+	    "field": "parent_bo_ref_id"
+	}
+  },
+  "parentBankComment":{
+	  "read_api_field": {
+      "type": "complex",
+      "section": "parent_tnx_details",
+      "field": {
+        "type": "complex",
+        "section": "bo_comment",
+        "field": "text"
+      }
+      }
+   },
+"parentEventReference":{
+	  "read_api_field": {
+      "type": "complex",
+      "section": "parent_tnx_details",
+      "field": "bo_tnx_id"
+      }
+},
+   "previousBankComment":{
+	 "read_api_field": {
+	 "type": "complex",
+	"section": "original_xml",
+			"field": {
+				"type": "complex",
+				"section": "lc_tnx_record",
+				"field": "bo_comment"
+			}
+	}
+   },
+   "previousBankAttachmentTable": {
+  	"read_api_field": {
+      "type": "complex",
+      "section": "parent_tnx_details",
+      "field": {
+		          "type": "json",
+	      		  "field": "attachments"
+	          }
+      }
+  },
+  "forwardContract": "fwd_contract_no",
+  "templateName": "template_id",
+  "templateDescription": "template_description",
+  "fetchedTemplate": {
+    "read_api_field" : "template_id"
+  },
+   "fetchedRefValue": { "read_api_field": {
+      "type": "complex",
+      "section": "cross_references",
+      "field": {
+        "type": "array",
+        "section": "cross_reference",
+        "field": [
+          "ref_id"
+         ]
+      }
+    }},
+  "claimReference": "claim_reference",
+  "claimReferenceLC": {
+  		"read_api_field": "claim_reference"
+  },
+  "eventReference": "bo_tnx_id",
+  "claimPresentationDate": "claim_present_date",
+  "claimPresentationDateLC": {
+  		"read_api_field": "claim_present_date"
+  },
+  "claimAmount": "claim_amt",
+  "claimAmountLC": {
+  		"read_api_field": "claim_amt"
+  },
+  "attachments": "attachments",
+  "fileUploadTable": {
+    "read_api_field": "attachments"
+  },
+  "childRef": { "read_api_field": {
+      "type": "array",
+      "section": "cross_references",
+      "field": {
+        "type": "array",
+        "section": "cross_reference",
+        "field": [
+          "child_ref_id"
+         ]
+      }
+    }},
+  "bankAttachmentTable": {
+  	"read_api_field": "attachments"
+  },
+  "claimCurrencyCode": "claim_cur_code",
+  "claimCurrencyCodeLC": {
+  		"read_api_field": "claim_cur_code"
+  },
+  "requestOptionsLC": "lc_type",
+  "backToBackLCToggle": "back_to_back_tnx",
+  "provisionalCheckbox": "provisional_status",
+  "transmissionMode": "adv_send_mode",
+  "advSendModeText": "adv_send_mode_text",
+  "irv_flag": "irv_flag",
+  "ntrf_flag": "ntrf_flag",
+  "revolving_flag": "revolving_flag",
+  "expiryDate": "exp_date",
+  "placeOfExpiry": "expiry_place",
+  "applicableRulesOptions": "applicable_rules",
+  "otherApplicableRules": "applicable_rules_text",
+  "confirmationOptions": "cfm_inst_code",
+  "customerReference": "cust_ref_id",
+  "issueDate": "iss_date",
+  "bankReference": "bo_ref_id",
+  "beneficiaryReference": "beneficiary_reference",
+  "availableAmount": "lc_available_amt",
+  "liabAmount":"lc_liab_amt",
+  "outstandingAmount": "lc_liab_amt",
+  "applicantEntity": "entity",
+  "applicantName": "applicant_name",
+  "applicantFirstAddress": "applicant_address_line_1",
+  "applicantSecondAddress": "applicant_address_line_2",
+  "applicantThirdAddress": "applicant_dom",
+  "applicantFourthAddress": "applicant_address_line_4",
+  "altApplicantName": "alt_applicant_name",
+  "altApplicantFirstAddress": "alt_applicant_address_line_1",
+  "altApplicantSecondAddress": "alt_applicant_address_line_2",
+  "altApplicantThirdAddress": "alt_applicant_dom",
+  "altApplicantFourthAddress": "alt_applicant_address_line_4",
+  "altApplicantcountry": "alt_applicant_country",
+  "applicantToggle": "for_account_flag",
+   "altApplicantCustRefView": {
+	  	"read_api_field": "alt_applicant_cust_ref"
+	  },
+  "beneAbbvName" : "beneficiary_abbv_name",
+  "provisionalLCToggle": "provisional_status",
+  "beneficiaryEntity": "beneficiary_name",
+  "beneficiaryFirstAddress": "beneficiary_address_line_1",
+  "beneficiarySecondAddress": "beneficiary_address_line_2",
+  "beneficiaryThirdAddress": "beneficiary_dom",
+  "beneficiaryFourthAddress": "beneficiary_address_line_4",
+  "beneficiarycountry": "beneficiary_country",
+  "amendmentNarrative": {
+    "write_api_field": "amd_details",
+    "read_api_field": {
+      "type": "complex",
+      "section": "amd_details",
+      "field": "text"
+    }
+  },
+  "bankNameList": {
+    "write_api_field": "issuing_bank_abbv_name",
+    "read_api_field": {
+      "type": "complex",
+      "section": "issuing_bank",
+      "field": "abbv_name"
+    }
+  },
+  "issuingBankName": {
+    "read_api_field": {
+      "type": "complex",
+      "section": "issuing_bank",
+      "field": "name"
+    }
+  },
+  "issuerReferenceList": "applicant_reference",
+  "advisingswiftCode": {
+    "write_api_field": "advising_bank_iso_code",
+    "read_api_field": {
+      "type": "complex",
+      "section": "advising_bank",
+      "field": "iso_code"
+    }
+  },
+  "advisingBankName": {
+    "write_api_field": "advising_bank_name",
+    "read_api_field": {
+      "type": "complex",
+      "section": "advising_bank",
+      "field": "name"
+    }
+  },
+  "advisingBankFirstAddress": {
+    "write_api_field": "advising_bank_address_line_1",
+    "read_api_field": {
+      "type": "complex",
+      "section": "advising_bank",
+      "field": "address_line_1"
+    }
+  },
+  "advisingBankSecondAddress": {
+    "write_api_field": "advising_bank_address_line_2",
+    "read_api_field": {
+      "type": "complex",
+      "section": "advising_bank",
+      "field": "address_line_2"
+    }
+  },
+  "advisingBankThirdAddress": {
+    "write_api_field": "advising_bank_dom",
+    "read_api_field": {
+      "type": "complex",
+      "section": "advising_bank",
+      "field": "dom"
+    }
+  },
+  "advisingBankFourthAddress": {
+    "write_api_field": "advising_bank_address_line_4",
+    "read_api_field": {
+      "type": "complex",
+      "section": "advising_bank",
+      "field": "address_line_4"
+    }
+  },
+  "advThroughswiftCode": {
+    "write_api_field": "advise_thru_bank_iso_code",
+    "read_api_field": {
+      "type": "complex",
+      "section": "advise_thru_bank",
+      "field": "iso_code"
+    }
+  },
+  "adviceThroughName": {
+    "write_api_field": "advise_thru_bank_name",
+    "read_api_field": {
+      "type": "complex",
+      "section": "advise_thru_bank",
+      "field": "name"
+    }
+  },
+  "adviceThroughFirstAddress": {
+    "write_api_field": "advise_thru_bank_address_line_1",
+    "read_api_field": {
+      "type": "complex",
+      "section": "advise_thru_bank",
+      "field": "address_line_1"
+    }
+  },
+  "adviceThroughSecondAddress": {
+    "write_api_field": "advise_thru_bank_address_line_2",
+    "read_api_field": {
+      "type": "complex",
+      "section": "advise_thru_bank",
+      "field": "address_line_2"
+    }
+  },
+  "adviceThroughThirdAddress": {
+    "write_api_field": "advise_thru_bank_dom",
+    "read_api_field": {
+      "type": "complex",
+      "section": "advise_thru_bank",
+      "field": "dom"
+    }
+  },
+  "adviceThroughFourthAddress": {
+    "write_api_field": "advise_thru_bank_address_line_4",
+    "read_api_field": {
+      "type": "complex",
+      "section": "advise_thru_bank",
+      "field": "address_line_4"
+    }
+  },
+  "counterPartyList": "req_conf_party_flag",
+  "confirmationBankName": {
+    "write_api_field": "requested_confirmation_party_name",
+    "read_api_field": {
+      "type": "complex",
+      "section": "requested_confirmation_party",
+      "field": "name"
+    }
+  },
+  "confirmationPartySwiftCode": {
+    "write_api_field": "requested_confirmation_party_iso_code",
+    "read_api_field": {
+      "type": "complex",
+      "section": "requested_confirmation_party",
+      "field": "iso_code"
+    }
+  },
+  "confirmationFirstAddress": {
+    "write_api_field": "requested_confirmation_party_address_line_1",
+    "read_api_field": {
+      "type": "complex",
+      "section": "requested_confirmation_party",
+      "field": "address_line_1"
+    }
+  },
+  "confirmationSecondAddress": {
+    "write_api_field": "requested_confirmation_party_address_line_2",
+    "read_api_field": {
+      "type": "complex",
+      "section": "requested_confirmation_party",
+      "field": "address_line_2"
+    }
+  },
+  "confirmationThirdAddress": {
+    "write_api_field": "requested_confirmation_party_dom",
+    "read_api_field": {
+      "type": "complex",
+      "section": "requested_confirmation_party",
+      "field": "dom"
+    }
+  },
+  "confirmationFourthAddress": {
+    "write_api_field": "requested_confirmation_party_address_line_4",
+    "read_api_field": {
+      "type": "complex",
+      "section": "requested_confirmation_party",
+      "field": "address_line_4"
+    }
+  },
+  "transactionEventCurrency": "lc_cur_code",
+  "documentCurrency": "lc_cur_code",
+  "docCurCode": "lc_cur_code",
+  "lcCurrency": "lc_cur_code",
+  "currency": "lc_cur_code",
+  "lcAvilableCurrency": {
+    "read_api_field": "lc_cur_code"
+  },
+  "lcOutstandingCurrency": {
+    "read_api_field": "lc_cur_code"
+  },
+  "lcCurDisplay": "lc_cur_code",
+  "lcCurOutstanding": "lc_cur_code",
+  "amount": "lc_amt",
+  "lcCurDisplay":{
+  	 "read_api_field":"lc_cur_code"
+  	},
+  "lcCurOutstanding":{
+  	 "read_api_field":"lc_cur_code"
+  	},
+  "lcAmount": "lc_amt",
+  "originalLCAmount": "lc_liab_amt",
+  "tnxAmt": "tnx_amt",
+  "lcAvailableAmt": "lc_available_amt",
+  "percp": "pstv_tol_pct",
+  "percm": "neg_tol_pct",
+  "issuingBankCharges": "open_chrg_brn_by_code",
+  "amendmentCharges": "amd_chrg_brn_by_code",
+  "outStdCurrency": "corr_chrg_brn_by_code",
+  "confCharges": "cfm_chrg_brn_by_code",
+  "chargesToApplicant": "open_chrg_applicant",
+  "chargesToBeneficiary": "open_chrg_beneficiary",
+  "chargesToApplicantOutside": "corr_chrg_applicant",
+  "chargesToBeneficiaryOutside": "corr_chrg_beneficiary",
+  "chargesToApplicantConf" : "cfm_chrg_applicant",
+  "chargesToBeneficiaryConf" : "cfm_chrg_beneficiary",
+  "addAmtTextArea": {
+    "write_api_field": "narrative_additional_amount",
+    "read_api_field": {
+      "type": "complex",
+      "section": "narrative_additional_amount",
+      "field": "text"
+    }
+  },
+  "revolvePeriod": "revolve_period",
+  "revolveFrequency": "revolve_frequency",
+  "numberOfTimesToRevolve": "revolve_time_no",
+  "cumulativeCheckbox": "cumulative_flag",
+  "noticeDays": "notice_days",
+  "paymentDetailsBankEntity": {
+    "write_api_field": "credit_available_with_bank_type",
+    "read_api_field": {
+      "type": "additionalFields",
+	  "section": "additionalFields",
+	  "field": "credit_available_with_bank_type"
+    }
+  },
+  "paymentDetailsBankName": {
+    "write_api_field": "credit_available_with_bank_name",
+    "read_api_field": {
+      "type": "complex",
+      "section": "credit_available_with_bank",
+      "field": "name"
+    }
+  },
+  "paymentDetailsBankFirstAddress": {
+    "write_api_field": "credit_available_with_bank_address_line_1",
+    "read_api_field": {
+      "type": "complex",
+      "section": "credit_available_with_bank",
+      "field": "address_line_1"
+    }
+  },
+  "paymentDetailsBankSecondAddress": {
+    "write_api_field": "credit_available_with_bank_address_line_2",
+    "read_api_field": {
+      "type": "complex",
+      "section": "credit_available_with_bank",
+      "field": "address_line_2"
+    }
+  },
+  "paymentDetailsBankThirdAddress": {
+    "write_api_field": "credit_available_with_bank_dom",
+    "read_api_field": {
+      "type": "complex",
+      "section": "credit_available_with_bank",
+      "field": "dom"
+    }
+  },
+  "paymentDetailsBankFourthAddress": {
+    "write_api_field": "credit_available_with_bank_address_line_4",
+    "read_api_field": {
+      "type": "complex",
+      "section": "credit_available_with_bank",
+      "field": "address_line_4"
+    }
+  },
+  "creditAvailableOptions": "cr_avl_by_code",
+  "paymentDraftOptions": "tenor_type",
+  "fixedMaturityPaymentDate": "tenor_maturity_date",
+  "inputDraweeDetail": {
+    "write_api_field": "drawee_details_bank_type",
+    "read_api_field": {
+      "type": "complex",
+      "section": "drawee_details_bank",
+      "field": "type"
+    }
+  },
+    "draweeBankName": {
+    "write_api_field": "drawee_details_bank_name",
+    "read_api_field": {
+      "type": "complex",
+      "section": "drawee_details_bank",
+      "field": "name"
+    }
+  },
+  "inputValNum": "tenor_days",
+  "inputDays": "tenor_period",
+  "inputFrom": "tenor_from_after",
+  "inputSelect": "tenor_days_type",
+  "inputSelectOther": "tenor_type_details", 
+  "inputTextAreaMixPayment": "draft_term",
+  "shipmentForm": "ship_from",
+  "shipmentTo": "ship_to",
+  "shipmentPlaceOfLoading": "ship_loading",
+  "shipmentPlaceOfDischarge": "ship_discharge",
+  "shipmentPeriodvalue": "ship_period",
+  "shipmentName": "ship_name",
+  "shipmentEarliestDate": "earliest_ship_date",
+  "shipmentLastDate": "last_ship_date",
+  "shipmentPeriodText": {
+    "write_api_field": "narrative_shipment_period",
+    "read_api_field": {
+      "type": "complex",
+      "section": "narrative_shipment_period",
+      "field": "text"
+    }
+  },
+  "partialshipmentvalue": "part_ship_detl",
+  "transhipmentvalue": "tran_ship_detl",
+  "incoTermsRules": "inco_term_year",
+  "purchaseTermsValue": "inco_term",
+  "namedPlace": "inco_place",
+  "descOfGoodsText": {
+    "write_api_field": "narrative_description_goods",
+    "read_api_field": {
+      "type": "complex",
+      "section": "narrative_description_goods",
+      "field": {
+        "type": "complex",
+        "section": "issuance",
+        "field": {
+          "type": "complex",
+          "section": "data",
+          "field": {
+            "type": "complex",
+            "section": "datum",
+            "field": "text"
+          }
+        }
+      }
+    }
+  },
+    "masterDescOfGoods": {
+    "read_api_field": {
+    "decodeHtmlNotRequired": "disableDecode",
+    "type": "json",
+      "field": "narrative_master_description_goods"
+    }
+  },
+  "masterDescOfGoodsView": {
+    "read_api_field": {
+    "decodeHtmlNotRequired": "disableDecode",
+    "type": "json",
+      "field": "narrative_description_goods"
+    }
+  },
+
+"masterDocReqd": {
+ "read_api_field": {
+ "decodeHtmlNotRequired": "disableDecode",
+    "type": "json",
+      "field": "narrative_master_documents_required"
+    }
+},
+"masterDocReqdView": {
+ "read_api_field": {
+ "decodeHtmlNotRequired": "disableDecode",
+    "type": "json",
+      "field": "narrative_documents_required"
+    }
+},
+
+
+
+"masterSplBene": {
+ "read_api_field": {
+ "decodeHtmlNotRequired": "disableDecode",
+    "type": "json",
+      "field": "narrative_master_special_beneficiary"
+    }
+},
+"masterSplBeneView": {
+ "read_api_field": {
+ "decodeHtmlNotRequired": "disableDecode",
+    "type": "json",
+      "field": "narrative_special_beneficiary"
+    }
+},
+"masterAddInstr": {
+ "read_api_field": {
+ "decodeHtmlNotRequired": "disableDecode",
+    "type": "json",
+      "field": "narrative_master_additional_instructions"
+    }
+},
+"masterAddInstrView": {
+ "read_api_field": {
+ "decodeHtmlNotRequired": "disableDecode",
+    "type": "json",
+      "field": "narrative_additional_instructions"
+    }
+},
+  "descOfGoodsAmendEditTextArea": {
+    "write_api_field": "narrative_description_goods"
+  },
+  "descOfGoodsAmendEditTextAreaRead": {
+      "read_api_field": {
+      "type": "complex",
+      "section": "narrative_description_goods",
+      "field": {
+        "type": "complex",
+        "section": "amendments",
+        "field": {
+	        "type": "complex",
+	        "section": "amendment",
+	        "field": {
+	          "type": "complex",
+	          "section": "data",
+	          "field": {
+		          "type": "json",
+	      		  "field": "datum"
+	          }
+        }
+        }
+      }
+      }
+    },
+  "descOfGoodsAmendmentPanel": {
+    "read_api_field": {
+      "type": "complex",
+      "section": "narrative_description_goods",
+      "decodeHtmlNotRequired": "disableDecode",
+      "field": {
+        "type": "complex",
+        "section": "amendments",
+        "field": "amendment",
+        "decodeHtmlNotRequired": "disableDecode"
+      }
+    }
+  },
+  "docRequiredText": {
+    "write_api_field": "narrative_documents_required",
+    "read_api_field": {
+      "type": "complex",
+      "section": "narrative_documents_required",
+      "field": {
+        "type": "complex",
+        "section": "issuance",
+        "field": {
+          "type": "complex",
+          "section": "data",
+          "field": {
+            "type": "complex",
+            "section": "datum",
+            "field": "text"
+          }
+        }
+      }
+    }
+  },
+  "docRequiredAmendEditTextArea": {
+    "write_api_field": "narrative_documents_required"
+  },
+    "docReqAmendEditTextAreaRead": {
+      "read_api_field": {
+      "type": "complex",
+      "section": "narrative_documents_required",
+      "field": {
+        "type": "complex",
+        "section": "amendments",
+        "field": {
+	        "type": "complex",
+	        "section": "amendment",
+	        "field": {
+	          "type": "complex",
+	          "section": "data",
+	          "field": {
+		          "type": "json",
+	      		  "field": "datum"
+	          }
+        }
+        }
+      }
+      }
+    },
+  "docRequiredAmendmentPanel": {
+    "read_api_field": {
+      "type": "complex",
+      "section": "narrative_documents_required",
+      "decodeHtmlNotRequired": "disableDecode",
+      "field": {
+        "type": "complex",
+        "section": "amendments",
+        "field": "amendment",
+        "decodeHtmlNotRequired": "disableDecode"
+      }
+    }
+  },
+  "addInstructionText": {
+    "write_api_field": "narrative_additional_instructions",
+    "read_api_field": {
+      "type": "complex",
+      "section": "narrative_additional_instructions",
+      "field": {
+        "type": "complex",
+        "section": "issuance",
+        "field": {
+          "type": "complex",
+          "section": "data",
+          "field": {
+            "type": "complex",
+            "section": "datum",
+            "field": "text"
+          }
+        }
+      }
+    }
+  },
+  "addInstructionAmendEditTextArea": {
+    "write_api_field": "narrative_additional_instructions"
+  },
+    "addInstAmendEditTextAreaRead": {
+      "read_api_field": {
+      "type": "complex",
+      "section": "narrative_additional_instructions",
+      "field": {
+        "type": "complex",
+        "section": "amendments",
+        "field": {
+	        "type": "complex",
+	        "section": "amendment",
+	        "field": {
+	          "type": "complex",
+	          "section": "data",
+	          "field": {
+		          "type": "json",
+	      		  "field": "datum"
+	          }
+        }
+        }
+      }
+      }
+    },
+  "addInstructionAmendmentPanel": {
+    "read_api_field": {
+      "type": "complex",
+      "section": "narrative_additional_instructions",
+      "decodeHtmlNotRequired": "disableDecode",
+      "field": {
+        "type": "complex",
+        "section": "amendments",
+        "field": "amendment",
+        "decodeHtmlNotRequired": "disableDecode"
+      }
+    }
+  },
+  "splPaymentBeneText": {
+    "write_api_field": "narrative_special_beneficiary",
+    "read_api_field": {
+      "type": "complex",
+      "section": "narrative_special_beneficiary",
+      "field": {
+        "type": "complex",
+        "section": "issuance",
+        "field": {
+          "type": "complex",
+          "section": "data",
+          "field": {
+            "type": "complex",
+            "section": "datum",
+            "field": "text"
+          }
+        }
+      }
+    }
+  },
+  "splPaymentBeneAmendEditTextArea": {
+    "write_api_field": "narrative_special_beneficiary"
+  },
+    "splPaymentBeneAmendEditTextAreaRead": {
+      "read_api_field": {
+      "type": "complex",
+      "section": "narrative_special_beneficiary",
+      "field": {
+        "type": "complex",
+        "section": "amendments",
+        "field": {
+	        "type": "complex",
+	        "section": "amendment",
+	        "field": {
+	          "type": "complex",
+	          "section": "data",
+	          "field": {
+		          "type": "json",
+	      		  "field": "datum"
+	          }
+        }
+        }
+      }
+      }
+    },
+  "splPaymentBeneAmendmentPanel": {
+    "read_api_field": {
+      "type": "complex",
+      "section": "narrative_special_beneficiary",
+      "decodeHtmlNotRequired": "disableDecode",
+      "field": {
+        "type": "complex",
+        "section": "amendments",
+        "field": "amendment",
+        "decodeHtmlNotRequired": "disableDecode"
+      }
+    }
+  },
+  "nbdays": "period_presentation_days",
+  "periodOfPresentationText": {
+    "write_api_field": "narrative_period_presentation",
+    "read_api_field": {
+      "type": "complex",
+      "section": "narrative_period_presentation",
+      "field": "text"
+    }
+  },
+  "principalAct": "principal_act_no",
+  "feeAct": "fee_act_no",
+  "otherInst": {
+    "write_api_field": "free_format_text",
+    "read_api_field": {
+      "type": "complex",
+      "section": "free_format_text",
+      "field": "text"
+    }
+  },
+  "customerReleaseDate": "release_dttm",
+  "releaseDate": "release_dttm",
+  "actionRequired": "action_req_code",
+  "lastAnswerDate": "latest_answer_date",
+  "maturityDate": "maturity_date",
+  "amendmentRequestDate": "amd_date",
+  "documentAmount": "tnx_amt",
+  "docAmount": "tnx_amt",
+  "documentRef": "doc_ref_no",
+  "requestedDate": "appl_date",
+  "reportingStatus": "prod_stat_code",
+  "productStatCode": "prod_stat_code",
+  "imp_bill_ref_id": "imp_bill_ref_id",
+  "transactionType": "tnx_type_code",
+  "subTransactionType": "sub_tnx_type_code",
+  "tnxStatCode": "tnx_stat_code",
+  "companyName": {
+    "write_api_field":"company_name",
+    "read_api_field": {
+      "type": "additionalFields",
+      "section": "additionalFields",
+      "field": "company_full_name"
+    }
+  },
+  "boReleaseDate":  "bo_release_dttm",
+  "type": "lc_type",
+  "N002": "lc_type",
+  "systemID": "ref_id",
+  "customerRef": "cust_ref_id",
+  "amendmentNo": "amd_no",
+  "amendmentReqNo":"amd_req_no",
+  "amendCancelRequestDate": "amd_date",
+  "settlementCurrencyE": "tnx_cur_code",
+  "settlementAmountE": "tnx_amt",
+  "customerInstruction": {
+    "read_api_field": {
+      "type": "complex",
+      "section": "narrative_sender_to_receiver",
+      "field": "text"
+    }
+  },
+  "transactionAmount": "tnx_amt",
+  "transactionCurrency": "tnx_cur_code",
+  "applicationDate": "appl_date",
+  "customerReferenceView": "cust_ref_id",
+  "purchaseOrderReferenceView": {
+  "read_api_field": {
+      "type": "additionalFields",
+      "section": "additionalFields",
+      "field": "purchase_order"
+    }
+    },
+  "beneficiaryReferenceView": "beneficiary_reference",
+   "purchaseOrderReference": {
+    "write_api_field": "purchase_order",
+	"read_api_field": {
+      "type": "additionalFields",
+      "section": "additionalFields",
+      "field": "purchase_order"
+    }
+  },
+  "line_items": {
+    "write_api_field": {
+      "type": "complex",
+      "field": "line_items"
+    },
+    "read_api_field": {
+      "type": "json",
+      "field": "line_items"
+    }
+  },
+   "purchaseOrderLineItem": {
+    "write_api_field": {
+      "type": "complex",
+      "field": "purchaseOrderLineItem"
+    }
+  },
+
+    "deductions": "deductions",
+  
+    "goodsPercentageValue": {
+    "write_api_field": {
+      "type": "complex",
+      "field": "goods_percentage_value"
+    },
+    "read_api_field": {
+      "type": "json",
+      "field": "goods_percentage_value"
+    }
+  },
+  "issueDateView": "iss_date",
+  "bankReferenceView": "bo_ref_id",
+  "customerInstructionText": {
+    "write_api_field": "free_format_text",
+    "read_api_field": {
+      "type": "complex",
+      "section": "free_format_text",
+      "field": "text"
+    }
+  },
+  "subTnxTypeCode": "sub_tnx_type_code",
+  "TnxTypeCode": "tnx_type_code",
+  "transactionStatus": "transactionStatus",
+  "feesAndCharges": {
+    "read_api_field": {
+      "type": "array",
+      "section": "charges",
+      "field": {
+        "type": "array",
+        "section": "charge",
+        "field": [
+          "chrg_code",
+          "additional_comment",
+          "amt",
+          "status",
+          "chrg_code",
+          "cur_code"
+        ]
+      }
+    }
+  },
+   "linkedLicenses": {
+    "write_api_field": {
+      "type": "complex",
+      "field": "linked_licenses"
+    },
+    "read_api_field": {
+      "type": "json",
+      "field": "linked_licenses"
+    }
+  },
+  "attachmentsList":{
+  "read_api_field": {
+      "type": "json",
+      "field": "attachments"
+    }
+  },
+  "customerInstructions": {
+        "read_api_field": {
+          "type": "complex",
+          "section": "free_format_text",
+          "field": "text"
+        }
+      },
+      "disposalInstructions": "sub_tnx_type_code",
+       "consentResponse": {
+	  	"read_api_field": "sub_tnx_type_code"
+	  },
+      "actionRequiredEvent": "action_req_code",
+	 "newLCAmt": {
+	  	"read_api_field": "newLc_disp_amt"
+	  },
+	  "orgLCAmt": {
+	  	"read_api_field": "org_lc_amt"
+	  },
+	  "decreaseAmount": {
+	  	"read_api_field": "tnx_disp_amt"
+	  },
+	  "increaseAmount": {
+	  	"read_api_field": "tnx_disp_amt"
+	  },
+  "tnxTypeCode": "tnx_type_code",
+  "lcCardDetails": {
+    "read_api_field": {
+      "type": "cardData",
+      "section": "parent_details"
+    }
+  },
+  	"lcProductType": {
+        "write_api_field": "lcProductType",
+        "read_api_field": {
+            "type": "additionalFields",
+            "section": "additionalFields",
+            "field": "lcProductType"
+        }
+	},
+	"HijriExpDate": {
+        "write_api_field": "HijriExpDate",
+        "read_api_field": {
+            "type": "additionalFields",
+            "section": "additionalFields",
+            "field": "HijriExpDate"
+        }
+	}
+}

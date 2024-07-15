@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Copyright (c) 2000-2004 NEOMAlogic (http://www.neomalogic.com),
+   All Rights Reserved. 
+-->
+<openapi domain = "customer" scope="product">
+	<action>
+		<actioncode>getHijriDate</actioncode>
+		<method>getHijriDate</method>
+	</action>
+	<action>
+		<actioncode>sendSamlRequest</actioncode>
+		<method>sendSamlRequest</method>
+	</action>
+	<action>
+		<actioncode>consumeSAMLResponse</actioncode>
+		<method>consumeSAMLResponse</method>
+	</action>
+	<action>
+		<actioncode>consumeSamlResponse</actioncode>
+		<method>consumeSamlResponse</method>
+	</action>
+	<action>
+		<actioncode>getLimits</actioncode>
+		<method>getLimits</method>
+	</action>
+		<action>
+		<actioncode>getListFromCodeData</actioncode>
+		<method>getListFromCodeData</method>
+	</action>
+	
+</openapi>
