@@ -1,0 +1,44 @@
+<div class="p-lg-12" *ngIf="!hideShowCard" [@moveState]>
+    <p-card class="{{classCheck}}">
+        <p-header [ngClass]="(checkCustomise == true) ? 'showWidgetIcons':'hideWidgetIcons'">
+          <em tabindex="0" (keyup.enter)="deleteCards()"  class="pi pi-trash" role="button" aria-label="Delete" title="Delete" (click)="deleteCards()"></em>
+        </p-header> 
+        <h1 class="headerTitle">
+            Limits
+        </h1>
+        <!-- {{ console.log('Before table html tag') }} -->
+        <!-- <select id="limits-types-dropdown" class="ui-drpdown">
+            <option *ngFor="let option of typesList" [value]="option">{{ option.longDesc }}</option>
+        </select> -->
+        <p-dropdown id="limits-types-dropdown" [options]="typesList" [(ngModel)]="selectedLimit" (onChange)="LimitsDropdownChangeHandler()" optionLabel="longDesc" filter="true" dropdownIcon="pi pi-caret-down" filterBy= "label,value.label" resetFilterOnHide="true"></p-dropdown>
+        <p-table [value]="filteredLimits" class="limits-table">
+            <ng-template pTemplate="header">
+                <tr>
+                    <th>Allocation Number</th>
+                    <th>Total Limit</th>
+                    <th>Utilized Limit</th>
+                    <th>Available Limit</th>
+                    <th>Limit Expiry</th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-val let-i="rowIndex">
+                <tr>
+                    <td>{{ val.allocationNumber }}</td>
+                    <td>{{ val.totalLimit }}</td>
+                    <td>{{ val.utilizedLimit }}</td>
+                    <td>{{ val.availableLimit }}</td>
+                    <td>{{ val.limitExpiry }}</td>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="emptymessage">
+                <tr>
+                    <td colspan="5" style="text-align:center">No limits data fetched</td>
+                </tr>
+            </ng-template>
+        </p-table>
+
+        <div>
+            <!-- {{ console.log('After table html tag') }} -->
+        </div>
+    </p-card>
+</div>
