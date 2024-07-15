@@ -17,7 +17,6 @@ export class CurrencyConverterComponent implements OnInit {
   selectedCurrency;
   calculatedAmount: number;
   //This is change number 1
-  //added a comment as requested
   fromCurrency: any;
   toCurrency: any ;
   fromAmount = '100';
