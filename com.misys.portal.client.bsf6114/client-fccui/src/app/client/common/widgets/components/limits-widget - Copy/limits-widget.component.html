@@ -1,0 +1,41 @@
+<div class="p-lg-12" *ngIf="!hideShowCard" [@moveState]>
+    <p-card class="{{classCheck}}">
+        <p-header [ngClass]="(checkCustomise == true) ? 'showWidgetIcons':'hideWidgetIcons'">
+          <em tabindex="0" (keyup.enter)="deleteCards()"  class="pi pi-trash" role="button" aria-label="Delete" title="Delete" (click)="deleteCards()"></em>
+        </p-header> 
+        <h1 class="headerTitle">
+            Limits
+        </h1>
+        <!-- {{ console.log('Before table html tag') }} -->
+        <!-- <select id="limits-types-dropdown" class="ui-drpdown">
+            <option *ngFor="let option of typesList" [value]="option">{{ option.longDesc }}</option>
+        </select> -->
+        <p-dropdown id="limits-types-dropdown" [options]="typesList" [(ngModel)]="selectedLimit" (onChange)="LimitsDropdownChangeHandler()" optionLabel="longDesc" filter="true" dropdownIcon="pi pi-caret-down" filterBy= "label,value.label" resetFilterOnHide="true"></p-dropdown>
+        <table class="blueTable">
+            <thead>
+                <tr>
+                    <td>Allocation Number</td>
+                    <td>Total Limit</td>
+                    <td>Utilized Limit</td>
+                    <td>Available Limit</td>
+                    <td>Limit Expiry</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let val of filteredLimits; let i = index">
+                    <td>{{ val.allocationNumber }}</td>
+                    <td>{{ val.totalLimit }}</td>
+                    <td>{{ val.utilizedLimit }}</td>
+                    <td>{{ val.availableLimit }}</td>
+                    <td>{{ val.limitExpiry }}</td>
+                </tr>
+                <tr *ngIf="filteredLimits.length == 0;">
+                    <td colspan=9 style="text-align:center">No limits data fetched</td>
+                </tr>
+            </tbody>
+        </table>
+        <div>
+            <!-- {{ console.log('After table html tag') }} -->
+        </div>
+    </p-card>
+</div>

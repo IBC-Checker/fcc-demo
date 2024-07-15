@@ -1,0 +1,2285 @@
+@import './styles.scss';
+@import './styles/variables.scss';
+
+//overriding the color variables, doesn't work, I think
+$primaryColor:  #91DFDA !important;/// #91DFDA
+$secondaryColor:  #002A30 !important; //golden //#99CE7F #E6E6E6 #DDEDFD
+$darkerPrimaryColor: #4de7dd !important;
+$FUCHSIA-F100:  #002A30; //golden
+$form-Wrapper-background: #fff !important;
+$GRADIENT_01: linear-gradient( #91DFDA, #fff,  #002A30) !important;
+//D1D3D4 
+
+// @font-face {
+//     font-family: "MyriadPro";
+//     font-style: normal;
+//     font-weight: 300;
+//     src: url("/content/FCCUI/assets/fonts/MyriadPro-Regular.otf");
+//     src: local("MyriadPro"), local("MyriadPro-Regular"),
+//         url("/content/FCCUI/assets/fonts/MyriadPro-Regular.otf")
+//             format("opentype");
+// }
+// @font-face {
+//     font-family: "MyriadProBold";
+//     font-style: normal;
+//     font-weight: 300;
+//     src: url("/content/FCCUI/assets/fonts/MyriadPro-Bold.otf");
+//     src: local("MyriadProBold"), local("MyriadPro-Bold"),
+//         url("/content/FCCUI/assets/fonts/MyriadPro-Bold.otf")
+//             format("opentype");
+// }
+
+.ui-widget {
+    font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
+}
+
+* {
+    margin: 0;
+    padding: 0em;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;;
+}
+
+::-moz-selection { 
+    background:  #ACCEF7 !important;
+    color: white !important;
+}
+::selection { 
+    background:  #ACCEF7 !important; 
+    color: white !important;
+}
+ //aya
+.FCC .bank-select .mat-button-toggle-group .mat-button-toggle .mat-button-toggle-button, .FCC .indented-Field .mat-button-toggle-group .mat-button-toggle .mat-button-toggle-button {
+    color:  #002A30 !important;
+}
+
+body > app-root > div > fcc-common-login > div > div > div.p-col-12.p-md-12.p-lg-4.left-form > div > div.p-col-12.main-form-container > div > div.p-col-12.login_header > span.h-text-1{
+    display: none !important;
+}
+
+.FCC .ng-menu .ui-menubar .ui-submenu-list .ui-menuitem > a:focus {
+    border: 0.125em solid  #002A30 !important;
+}
+
+.FCC fcc-trade-bank-details .mat-ink-bar{
+    background-color:  #91DFDA;
+}
+
+.FCC fcc-common-header .ng-menu .ui-menubar {
+    border: 1px solid  #002a30 !important;
+    background-color:  #002a30 !important;
+}
+
+// .mat-focus-indicator .mat-stroked-button .mat-button-base browseButton{
+//     color:  #91DFDA;
+//     border:  #91DFDA;
+// }
+
+//aya
+
+/*.header-top div.ng-star-inserted {
+    display: inline !important;
+}*/
+/*.ng-header{
+    background-color:  #91DFDA !important;
+}*/
+.ng-header a.logo-img:hover {
+    background-color: transparent !important;
+}
+.ng-header a:hover {
+    background-color: transparent !important; //#D9D9D9
+    color:  #002A30 !important;
+}
+.ng-header a:hover em {
+    color:  #002A30 !important; //#91DFDA // #002A30
+}
+
+.FCC fcc-common-header .view-profile a {
+    color:  #002a30 !important;
+}
+
+body > app-root > div > div > fcc-common-header > div > p-overlaypanel.ng-star-inserted > div > div > div.p-grid > div.p-col-12.view-profile.focus > span > a{
+    color:  #002a30 !important;
+}
+
+/*.ng-header a em {
+    color: #fff !important;
+}
+.lastLoginLabel{
+    color: #fff !important;
+}*/
+
+#headerLogout{
+    background-color:  #002A30 !important;
+}
+
+#headerLogout:hover{
+    background-color: $primaryColor;
+}
+
+#headerLogout:hover .pi-sign-out:before{
+    color: #fff !important;
+}
+
+em#logout.pi.pi-sign-out{
+    color: #fff !important;
+}
+
+body .ui-menubar .ui-menubar-root-list > .ui-menuitem > .ui-menuitem-link:hover {
+    background-color:  #002A30 !important; //#2B2B2B // #002A30
+}
+
+.ui-button:enabled:active {
+    background-color:  #91DFDA !important;
+    border-color:  #91DFDA !important;
+}
+
+.ui-carousel .ui-carousel-content .ui-button.ui-widget.ui-state-default.ui-corner-all{
+    background-color: #fff !important;
+}
+
+.ui-chkbox .ui-chkbox-box.ui-state-active:not(.ui-state-disabled):hover {
+    border-color: $primaryColor;
+    background-color: $primaryColor;
+}
+
+.ui-button:enabled:hover {
+    background-color: #fff !important;
+    color:  #91DFDA !important;
+    border-color:  #91DFDA !important;
+}
+.ui-button.ui-button-rounded {
+    background-color:  #91DFDA !important;
+}
+
+a, .filterType {
+    color:  #91DFDA !important;
+}
+.log-out {
+    color: #FFF !important;
+    font-size: 20px !important;
+}
+
+img.logout-img {
+    margin-left: -9em !important;
+    height: 670px !important;
+    width: auto !important;
+}
+
+
+.sign-out{
+    color:  #002A30 !important;
+}
+.close-icon a {
+    color:  #91DFDA !important;
+}
+  
+.close-icon a:hover {
+    color:  #91DFDA !important;
+}
+.close-icon a:active {
+    background-color: #D9D9D9 !important;
+    transition: opacity 0.2s cubic-bezier(0.35, 0, 0.25, 1),
+        background-color 0.2s cubic-bezier(0.35, 0, 0.25, 1);
+  }
+.corp-avatar {
+    background: linear-gradient( #91DFDA,  #002A30, #91DFDA) !important;
+}
+
+#userProfile{
+    margin-right: 0.75em;
+}
+// #userProfile span {
+//     background: -webkit-linear-gradient( #91DFDA,#91DFDA 70%, #91DFDA 90%, #91DFDA) !important;
+// }
+// #userProfileArabic span {
+//     background: -webkit-linear-gradient( #91DFDA,#91DFDA 70%, #91DFDA 90%, #91DFDA) !important;
+// }
+.ui-slidemenu .ui-menuitem .ui-menuitem-active > .ui-menuitem-link {
+  border-left: 0.788em solid #002A50 !important;
+}
+.ui-slidemenu .ui-menuitem.ui-menuitem-active > .ui-menuitem-link > .ui-menuitem-text {
+  color:  #91DFDA !important;
+}
+.ui-slidemenu .ui-menuitem.ui-menuitem-active > .ui-menuitem-link .ui-menuitem-icon {
+  color:  #002A30 !important;
+}
+/*.ui-dropdown-panel .ui-dropdown-items .ui-dropdown-item.ui-state-highlight {
+  background-color:  #91DFDA !important;
+}*/
+.ui-slidemenu .ui-menuitem-link:hover {
+    border-left: 0.788em solid rgba(183, 224, 255, 0.4) !important;
+    background-color: rgba(78, 182, 214, 0.04) !important;
+}
+.ui-slidemenu .ui-menuitem.ui-menuitem-active:hover > .ui-menuitem-link {
+  border-left: 0.788em solid  #002A30 !important;
+  background-color: rgba(183, 224, 255, 0.4) !important;
+}
+/*:host ::ng-deep .ng-menu .ui-menubar {
+    border: 1px solid #91DFDA !important;
+    background-color: #91DFDA !important;
+}*/
+//D1D3D4 
+.FCC fcc-common-header .ng-menu .ui-submenu .ui-submenu-list .ui-menuitem-link .ui-menuitem-text{
+    color: #121212 !important;
+    font-size: 16px !important;
+}
+.FCC fcc-common-header .ng-menu .ui-submenu .ui-submenu-list {
+    border: 0px solid  #002A30 !important;
+    background-color: #FFF !important;
+}
+.FCC fcc-common-header .ng-menu.dirLtrStyle .ui-menubar .ui-submenu-list .ui-menuitem .ui-menuitem-link:hover {
+  border-left: 5px solid rgba(137, 137, 137, 0.192) !important; //#a0c9e0
+}
+.FCC fcc-common-header .ng-menu.dirLtrStyle .ui-menubar .ui-submenu-list .ui-menuitem .ui-menuitem-link:hover .ui-menuitem-text{
+    color: white !important;
+}
+
+.FCC fcc-common-header .ng-menu .ui-submenu .ui-submenu-list .ui-menuitem-link:hover .ui-menuitem-text {
+    color: #121212 !important;
+    font-weight: 500;
+}
+.FCC fcc-common-header .ng-menu .ui-menubar .ui-submenu-list .ui-menuitem > a:focus {
+    border: 0.125em solid  #91DFDA !important;
+}
+.FCC fcc-common-header .ui-menubar .ui-menubar-root-list > .ui-menuitem > .ui-menuitem-link:hover, .FCC fcc-common-header .ui-menubar .ui-menubar-root-list > .ui-menuitem.ui-menuitem-active > .ui-menuitem-link {
+    background-color:  #91DFDA !important;
+}
+.FCC fcc-common-header .ui-menubar .ui-menubar-root-list>.ui-menuitem>a:focus {
+    outline: .125em solid  #91DFDA !important;
+}
+
+
+.FCC fcc-common-header .ng-menu.dirRtlStyle .ui-menubar .ui-submenu-list .ui-menuitem .ui-menuitem-link:hover {
+  border-right: 5px solid  #91DFDA !important; //#a0c9e0
+  background-color: #f8fdfe !important;
+}
+.FCC fcc-common-header .ng-menu.dirRtlStyle .ui-menubar .ui-submenu-list .ui-menuitem.ui-menuitem-active > .ui-menuitem-link {
+  border-right: 5px solid  #002a30 !important;
+}
+body .ui-breadcrumb ul li  > a:focus {
+    border: .125em solid  #91DFDA !important;
+}
+
+.ui-breadcrumb{
+    margin-top: -1em !important;
+}
+
+// .ui-breadcrumb {
+//     margin-top: -1em!important;
+// }
+
+#layoutRootDiv > app-root > div > div > fcc-common-header > div > div.header-top > div:nth-child(1) > div > a:nth-child(8) > div > p-breadcrumb > div{
+    margin-top: -1em!important;
+}
+
+body .ui-slidemenu .ui-menuitem > a:focus{
+    border: .125em solid  #91DFDA !important;
+}
+  
+//body .ui-menubar .ui-menubar-root-list>.ui-menuitem > a:focus {
+//    outline: .125em solid  #002A30 !important;
+//}
+body .ui-breadcrumb ul li:first-child a.pi-home:focus {
+    outline: .125em solid  #91DFDA !important; //check this
+    background-color: #ece3e3 !important;
+}
+
+body .ui-breadcrumb ul li:first-child a:hover  {
+    color:  #002A30 !important;
+}
+.sideNavBreadCrumb .ui-breadcrumb .ui-menuitem-link .ui-menuitem-text:focus{
+    outline: .125em solid  #002A30 !important;
+}
+body .ng-menu .ui-menubar .ui-submenu-list .ui-menuitem > a:focus {
+    border: .125em solid  #002A30 !important;
+    box-shadow: none;
+}
+  
+.focus a:focus {
+    outline: .125em solid  #91DFDA !important;
+}
+body .rtl .ui-dropdown-panel .ui-dropdown-items .ui-dropdown-item.ui-state-highlight {
+    color:  #91DFDA !important;
+    border-right: 0.4em solid  #91DFDA !important;
+}
+.languageCodeSelected {
+    color:  #91DFDA !important;
+    border-left: 0.4em solid  #91DFDA !important;
+}
+.languageCodeSelected:hover, .languageCodeSelected:focus {
+    background-color: rgba(183, 224, 255, 0.4) !important;
+}
+.languageCodeNotSelected:hover, .languageCodeNotSelected:focus {
+    border-left: 0.4em solid rgba(183, 224, 255, 0.4) !important;
+    background-color: rgba(183, 224, 255, 0.4) !important;
+} 
+.bank-select .uxg-filtering-toggle-group.mat-button-toggle-group .mat-button-toggle-label-content{
+    color:  #002A30 !important;
+}
+#accordionHeaderId label{
+    color:#0D6976 !important;
+    font-size: 18px !important;
+    margin-left: 5px !important;
+}
+.filterLabel, .filterType {
+    font-size:18px !important;
+}
+.filterContent{
+    margin-top: 6px !important;
+}
+.lastLoginContainer {
+    color:  #002a30 !important;
+    font-weight: bold !important;
+    font-size: 13px !important;
+}
+.FCC fcc-common-header .ui-button.ui-button-rounded {
+    border-radius: 4px !important;
+    background-color:  #002a30 !important;
+    box-shadow: none !important;
+}
+.FCC fcc-common-header .ui-button:enabled:active {
+    background-color:  #002a30 !important;
+    color: white !important;
+    border-color:  #002a30 !important;
+}
+.FCC fcc-common-header .ui-button:enabled:hover {
+    background-color:  #002a30 !important;
+    color: white !important;
+    border-color:  #002a30 !important;
+}
+//when an element in the menu is clicked on to show the options
+.FCC fcc-common-header .ui-menubar .ui-menubar-root-list > .ui-menuitem.ui-menuitem-active > .ui-menuitem-link {
+    background-color:  #002A30 !important;
+    outline: #002a30 !important;
+}
+.FCC fcc-common-header .ng-menu.dirLtrStyle .ui-menubar .ui-submenu-list .ui-menuitem.ui-menuitem-active > .ui-menuitem-link {
+    border-left: 5px solid  #002a30 !important;
+    background-color: #D9D9D9 !important;
+}
+.FCC fcc-common-header .ng-menu.dirLtrStyle .ui-menubar .ui-submenu-list .ui-menuitem.ui-menuitem-active > .ui-menuitem-link:hover {
+    border-left: 5px solid  #91DFDA !important;
+    background-color: #898989 !important;
+}
+
+.customiseON {
+    border: 0.09375em dashed  #91DFDA !important;
+}
+
+.FCC .primaryButton {
+    background:  #91DFDA !important;
+    color: #000 !important;
+    border-radius: 4px !important;
+}
+
+.primaryButton.ui-button.ui-button-text-only .ui-button-text, .FCC .secondaryButton.ui-button.ui-button-text-only .ui-button-text{
+    font-size: 16px !important;
+}
+
+body > app-root > div > fcc-common-global-dashboard > div > div.p-grid.p-justify-end.widgetCustomButtons.ng-star-inserted > div.p-col-12.p-md-6.p-lg-2.cursorCustomize.showWidgetIcons.ng-star-inserted > button, body > app-root > div > fcc-common-global-dashboard > div > div.p-grid.p-justify-end.widgetCustomButtons.ng-star-inserted > div:nth-child(3) > button{
+    border:  0.0625em solid  #002A30 !important;
+    background-color:  #002A30 !important;
+}
+body > app-root > div > fcc-common-global-dashboard > div > div.p-grid.p-justify-end.widgetCustomButtons.ng-star-inserted > div:nth-child(2) > button:hover{
+    border-color:  #91DFDA !important;
+}
+.createTaskButton {
+    color: #fff !important;
+}
+body > app-root > div > fcc-product-component > div > div:nth-child(3) > div > p-selectbutton > div > div:nth-child(2) > span{
+    color:  #002A30 !important;
+}
+#applyBtn{
+    background:  #002A30 !important;
+    color: #ffffff !important;
+}
+#applyBtn:hover{
+    background:  #91DFDA !important;
+    color: #ffffff !important;
+}
+.FCC .primaryButton:hover{
+    background:  #AFE6E3 !important; //#2B2B2B // #002A30
+    color: #000 !important;
+    border-radius: 4px !important;
+}
+.FCC .secondaryButton {
+    border: 0.0625em solid  #002A30 !important; // #002A30
+    color:  #002A30 !important;
+    border-radius: 4px !important;
+}
+.FCC .secondaryButton:hover {
+    background:  #91DFDA !important;
+    color: #fff !important;
+    border: 0.0625em solid  #91DFDA !important;
+    border-radius: 4px !important;
+}
+.FCC .secondaryButton.ui-button.ui-button-text-only .ui-button-text {
+    color:  #002A30 !important;
+    border-radius: 4px !important;
+}
+.FCC .secondaryButton.ui-button:hover.ui-button-text-only .ui-button-text {
+    color: white !important;
+    border-radius: 4px !important;
+}
+.saveTabButton {
+    color:  #002A30 !important;
+}
+
+//------ additional-info-tab.component
+.additionalClass {
+    color:  #91DFDA !important; // #002A30
+}
+//------ change-password-details.component
+.logo-img a:focus{
+    outline: 0.125em solid  #91DFDA !important; // #002A30
+}
+//------ filtersection.component
+p-multiselect > div.ui-multiselect.ui-state-focus {
+    border-bottom: 0.08em solid  #91DFDA !important; // #002A30 
+}
+.request .ui-selectbutton .ui-button {
+    border: -0.1em solid #fff !important;
+    color:  #91DFDA !important; 
+}
+  
+.request .ui-selectbutton .ui-button.ui-state-active {
+    background-color:  #91DFDA !important; 
+    border: 0.0625em solid #fff !important; 
+}
+.request .ui-selectbutton .ui-button.ui-state-active.ui-state-focus {
+    background-color:  #91DFDA !important;
+    box-shadow: 0 0 0.125em 0.125em  #91DFDA !important; //#c137a2
+}
+.request .ui-selectbutton .ui-button.ui-state-focus {
+    box-shadow: 0 0 0.125em 0.125em  #91DFDA !important; //#c137a2
+}
+
+.ui-datepicker table td > a.ui-state-active,
+.ui-datepicker table td > span.ui-state-active {
+  background-color:  #91DFDA !important;
+}
+
+/* not in CBQ
+.ui-datepicker table td.ui-datepicker-today > a.ui-state-active,
+.ui-datepicker table td.ui-datepicker-today > span.ui-state-active {
+  background-color:  #91DFDA !important;
+}*/
+
+.filterButton {
+    background-color:  #002A30 !important;
+    border-color:  #002A30 !important;
+}
+//global-dashboard.component
+.ui-dropdown:not(.ui-state-disabled).ui-state-focus {
+    border-color:  #91DFDA !important;
+}
+.overlayCardClass em {
+    color: #fff !important;
+}
+.overlayCardClass .ui-card-body {
+    border-left: 11px solid rgba(183, 224, 255, 0.4) !important;
+}
+.overlayCardClass .ui-card-body:hover {
+    border-left: 11px solid  #91DFDA !important;
+    color:  #91DFDA !important;
+}
+.sphere {
+    background-color: #fff !important;
+}
+/* commented on CBQ
+.custom-toast .ui-toast-message {
+    background: #3ab5da !important;
+    background: -webkit-linear-gradient(to right, #05212f, #91DFDA) !important;
+    background: linear-gradient(to right, #05212f, #91DFDA) !important;
+}*/
+.ui-button {
+    background-color:  #91DFDA !important;
+    border: 1px solid #fff !important;
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+.ui-chkbox .ui-chkbox-box.ui-state-active {
+    border-color:  #91DFDA !important;
+    background-color:  #002A30!important;
+}
+.ui-chkbox .ui-chkbox-box.ui-state-active:hover {
+    border-color:  #002A30 !important;
+    background-color: $primaryColor;
+}
+.FCC fcc-common-login .invalid-error-text {
+    color: #D72626 !important;
+}
+// decimals
+.balance-view, .balance-view-dec {
+    color:  #91DFDA !important; //dark blue
+}
+.fa-angle-down:before {
+    color:  #002A30 !important;
+}
+.commonContrastStyle {
+    color:  #91DFDA !important;
+}
+.miniStatementImage img {
+    border: .25em solid  #002A30 !important;;
+}
+// global-search.component
+.FCC fcc-common-global-search .autoCompleteSearch .ltr .ui-inputtext:enabled:not(.ui-state-error) {
+    border-bottom: 2px solid #fff !important;
+}
+.FCC fcc-common-global-search .autoCompleteSearch .rtl .ui-inputtext:enabled:not(.ui-state-error) {
+    border-bottom: 2px solid #fff !important;
+}
+.FCC fcc-common-global-search .ui-autocomplete-panel .ui-autocomplete-items .ui-autocomplete-list-item.ui-state-highlight {
+  background-color:  #002A30 !important;
+}
+.FCC fcc-common-global-search .ui-autocomplete-dd .ui-autocomplete-dropdown.ui-corner-all {
+    color:  #91DFDA !important;
+    border-bottom: 2px solid #fff !important;
+}
+.autoCompleteSearch i {
+    color: #fff;
+}
+.ltr #micIcon:focus i{
+    border: .125em solid  #91DFDA !important;
+}
+.rtl #micIcon:focus i{
+    border: .125em solid  #91DFDA !important;
+}
+.searchID {
+    color:  #002A30 !important;
+}
+.searchIDRtl {
+    color:  #002A30 !important;
+}
+.tdRefId {
+    background-color: rgb(38, 162, 255);
+}
+.actionsUrl a {
+    color:  #002A30 !important;
+}
+.actionsUrl:hover {
+    background-color: #F5F5F5 !important;
+}
+.FCC fcc-common-global-search .defaultSearchTable .ui-table .ui-table-tbody tr:nth-child(even){
+    background-color: #fff !important;
+}
+.FCC fcc-common-global-search .ui-paginator .ui-paginator-pages .ui-paginator-page.ui-state-active {
+    background-color:  #91DFDA !important;
+}
+.focus a:not(#micIcon):focus {
+    outline: .125em solid  #91DFDA !important;
+}
+.bencardname{
+    background: #fff !important;
+}
+
+.margin-top-15{
+    color:  #91DFDA !important;
+}
+.pi-search:after {
+    color:  #91DFDA !important;
+}
+.FCC fcc-common-global-search .searchID{
+    color:  #91DFDA !important;
+}
+// landingpage.component
+.logo-img-right a:focus {
+    outline: .125em solid  #91DFDA !important;
+}
+p-card:focus .ui-card {
+    outline: .125em solid  #91DFDA !important;
+}
+.focus a:focus .landing-container2{
+    outline: .125em solid  #91DFDA !important;
+}
+.ui-carousel .ui-carousel-dots-container .ui-carousel-dot-item.ui-state-highlight .ui-carousel-dot-icon {
+    background-color:  #91DFDA !important;
+    border: 1px solid #fff !important;
+}
+  
+.ui-carousel .ui-carousel-content .ui-carousel-next:not(.ui-state-disabled):hover {
+  color:  #91DFDA !important ;
+}
+  
+.ui-carousel .ui-carousel-content .ui-carousel-prev:not(.ui-state-disabled):hover {
+   color:  #91DFDA !important ;
+}
+
+// modifying logo size + adjusting the contents accordingly (nudging them towards the bottom)
+.ng-header .logo-img img{
+    max-width: 100px !important;
+    max-height: 50px !important;
+}
+.breadCrumbTop{
+    margin-top: 10px !important;
+}
+.breadCrumbTop{
+    margin-left: 0em !important;
+}
+.ng-header .header-right{
+    padding-top: 15px !important;
+}
+.ng-header .skip-link{
+    display: none !important;
+}
+#subDashboardLayout{
+    padding-top: 2em !important;
+    background-color: #fff !important;
+}
+.main-start {
+    padding: 4em 2em !important;
+}
+
+//login.component
+// .logo-img img{
+//     max-height: 100px !important;
+//     max-width: 300px !important;
+// }
+
+.h2-underline {
+    color:  #91DFDA !important;
+}
+.supportStyle{
+    color:  #91DFDA !important;
+}
+.supportLink a:focus {
+    outline: 0.125em solid  #91DFDA !important;
+}
+.FCC fcc-common-login .pd-lang .ui-dropdown:not(.ui-state-disabled).ui-state-focus {
+    box-shadow: 0 0 0 0.125em  #91DFDA !important;
+}
+.FCC fcc-common-login .ui-button:enabled:focus {
+    box-shadow: 0 0 0 0.2em #fff !important;
+}
+// label{
+//     color:  #91DFDA !important;
+// }
+.landing-label{
+    color:  #91DFDA !important;
+}
+.ui-accordion .ui-accordion-header a .ui-accordion-toggle-icon{
+    color:  #91DFDA !important;
+    margin-top: 10px !important;
+    font-size: 20px !important;
+}
+//On Import letter of C#D72626it page
+body .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem .ui-menuitem-link{
+    color:  #002A30 !important;
+    background-color: #fbfbfb !important;
+}
+
+body .ui-tabmenu {
+    font-size: 17px!important;
+}
+
+/* not on CBQ
+.FCC fcc-common-productlisting .ui-tabmenu .ui-tabmenu-nav li {
+    border: 0.0625em solid  #002A30 !important;
+}
+.FCC fcc-common-productlisting .ui-tabmenu .ui-tabmenu-nav li:hover {
+    background-color: #75838a !important;
+    border: 0.0625em solid  #002A30 !important;
+}
+.FCC fcc-common-productlisting .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-default:not(.ui-state-active) .ui-menuitem-text, 
+.FCC fcc-common-productlisting .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem:not(.ui-state-active):not(.ui-state-disabled):hover .ui-menuitem-link .ui-menuitem-text {
+    color:  #002A30 !important; // #91DFDA
+}
+.FCC fcc-common-productlisting .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-default:not(.ui-state-active):hover .ui-menuitem-text, 
+.FCC fcc-common-productlisting .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem:not(.ui-state-active):not(.ui-state-disabled):hover .ui-menuitem-link:hover .ui-menuitem-text {
+    color: white !important; // #91DFDA
+}*/
+.retrieve-details {
+    color: #D72626 !important;
+    font-size: 14px !important;
+}
+.FCC body .tabButton.ui-selectbutton .ui-button,
+.FCC body .taskButton.ui-selectbutton .ui-button {
+  border: -0.1em solid #fff !important;
+  color:  #91DFDA !important;
+}
+.FCC body .tabButton.ui-selectbutton .ui-button:not(.ui-state-disabled):not(.ui-state-active).ui-state-focus {
+    box-shadow: 0 0 0 0.1em  #002A30 !important;
+}
+.FCC body .tabButton.ui-selectbutton .ui-button.ui-state-active,
+.FCC body .taskButton.ui-selectbutton .ui-button.ui-state-active {
+  background-color:  #91DFDA !important;
+  border: 0.0625em solid #fff !important;
+}
+.FCC body .tabButton .ui-button.ui-button-text-only .ui-button-text, .taskButton .ui-button.ui-button-text-only .ui-button-text {
+    color: white !important;
+    font-size: 20px !important;
+}
+/* not on CBQ
+.FCC fcc-common-productlisting .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active {
+    background-color:  #91DFDA !important;;
+}*/
+.FCC .indented-Field .uxg-filtering-toggle-group.mat-button-toggle-group .mat-button-toggle, .FCC .bank-select .uxg-filtering-toggle-group.mat-button-toggle-group .mat-button-toggle {
+    border: 1px solid transparent !important;
+    background-color: #fff !important;
+    font-size: 16px !important;
+}
+.FCC .indented-Field .mat-button-toggle-group .mat-button-toggle.mat-button-toggle-checked, .FCC .bank-select .mat-button-toggle-group .mat-button-toggle.mat-button-toggle-checked{
+    background-color: transparent !important;
+}
+.FCC .indented-Field .mat-button-toggle-group .mat-button-toggle:not(.ui-state-active).mat-button-toggle-button, .FCC .bank-select .mat-button-toggle-group .mat-button-toggle:not(.ui-state-active).mat-button-toggle-button {
+    color:  #002A30 !important;
+}
+//<span class="ui-button-text ui-clickable ng-star-inserted">Sections</span>
+.FCC body .tabButton.ui-selectbutton .ui-button,
+.FCC body .taskButton.ui-selectbutton .ui-button {
+  background-color: #D9D9D9 !important;
+  border: 1px solid #fff !important;
+  -webkit-transition: background-color 0.2s, box-shadow 0.2s !important;
+  transition: background-color 0.2s, box-shadow 0.2s !important;
+}
+.FCC body .ui-progressbar .ui-progressbar-value {
+    background:  #91DFDA !important;
+}
+
+// .FCC body .ui-progressbar {
+// background: #dbe7ee !important;
+// }
+.progressBarItem {
+    color:  #91DFDA !important;
+}
+.viewButton {
+    color:  #002A30 !important; //$FUCHSIA-F100;
+}
+@keyframes ui-progress-spinner-color {
+    100%,
+    100% {
+      stroke:  #91DFDA !important;
+    }
+}
+.FCC body .mat-progress-bar .mat-progress-bar-fill::after {
+    background-color: #0F9915 !important;
+}
+.FCC body .mat-progress-bar .mat-progress-bar-buffer {
+    background-color: #D9D9D9;
+}
+//table
+.ui-table .ui-paginator-bottom{
+    background-color: #fff !important;
+}
+// Copied from CBQ as it is (till footer.component)
+tr:hover > td{
+    border-bottom: 0.065em solid $secondaryColor;
+    border-top: 0.065em solid $secondaryColor;
+}
+tr:hover > td .displayChevron{
+    color: $primaryColor;
+}
+.FCC fcc-table .ui-paginator {
+    background-color: rgba(137, 137, 137, 0.31) !important;
+    border: 0.065em solid rgba(137, 137, 137, 0.31) !important;
+}
+.FCC fcc-table .ui-paginator .ui-paginator-pages .ui-paginator-page.ui-state-active {
+    background-color:  #002A30 !important; //#d1caca
+}
+.FCC fcc-table .ui-chkbox .ui-chkbox-box.ui-state-active.ui-state-focus {
+    border-color: $primaryColor;
+    background-color: $primaryColor;
+}
+.FCC fcc-table .ui-chkbox .ui-chkbox-box.ui-state-active {
+    border-color: $primaryColor;
+    background-color: $primaryColor;
+}
+.FCC fcc-table .ui-chkbox .ui-chkbox-box.ui-state-active.ui-state-focus {
+    border-color: $primaryColor;
+    background-color: $primaryColor;
+}
+.FCC fcc-table .ui-chkbox .ui-chkbox-box.ui-state-active:not(.ui-state-disabled):hover {
+    border-color: $primaryColor;
+    background-color: $primaryColor;
+}
+.FCC fcc-table .ui-chkbox-box .ui-widget .ui-corner-all .ui-state-active .ui-state-active {
+    border-color: $primaryColor;
+    background-color: $primaryColor;
+}
+//unsure about what border-color is used here
+.FCC fcc-table .ui-dropdown {
+    background: #ffffff !important;
+    border: none !important;
+    -webkit-transition: border-color 0.2s !important;
+    transition: border-color 0.2s !important;
+}
+.FCC fcc-table .ui-dropdown .ui-dropdown-trigger .ui-dropdown-trigger-icon {
+    color: $secondaryColor;
+}
+/*.FCC fcc-table .ui-dropdown-panel .ui-dropdown-items .ui-dropdown-item.ui-state-highlight {
+  background-color: $primaryColor;
+}*/
+.FCC fcc-table .ui-dropdown-panel .ui-dropdown-filter-container .ui-dropdown-filter-icon {
+    color: $secondaryColor;
+}
+.FCC fcc-table .ui-multiselect-panel .ui-multiselect-header .ui-multiselect-filter-container .ui-multiselect-filter-icon {
+    color: $secondaryColor;
+}
+#searchIcon {
+    color: $secondaryColor;
+}
+.FCC .transmission .uxg-filtering-toggle-group.mat-button-toggle-group .mat-button-toggle:hover, .FCC .transmission-2 .uxg-filtering-toggle-group.mat-button-toggle-group .mat-button-toggle:hover {
+    box-shadow: 0 0 2px 1px $primaryColor;
+}
+.FCC .warningStyle {
+    color: #D72626 !important;
+}
+.fcc-field-message .ui-message .ui-message-text{
+    color: #D72626 !important;
+}
+.mat-radio-label-content label{
+    color:  #002A30 !important;
+}
+.FCC .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle{
+    border-color:  #002A30 !important;
+}
+.FCC .mat-radio-button.mat-accent .mat-radio-inner-circle{
+    background-color:  #002A30 !important;
+}
+
+.FCC fcc-table .ui-radiobutton .ui-radiobutton-box.ui-state-active {
+    border-color: $secondaryColor;
+}
+.FCC fcc-table .ui-radiobutton .ui-radiobutton-box.ui-state-active .ui-radiobutton-icon {
+    background-color: $secondaryColor;
+}
+.FCC fcc-table .ui-radiobutton .ui-radiobutton-box.ui-state-active:not(.ui-state-disabled):hover {
+    border-color: $secondaryColor;
+}
+.ellipisis {
+    color:$secondaryColor;
+}
+.threeDots:hover{
+    color: $secondaryColor;
+}
+.FCC fcc-table .ui-table .ui-table-tbody > tr:focus {
+    outline: .125em solid $secondaryColor;
+}
+.FCC fcc-table p-multiselect > div.ui-multiselect.ui-state-focus {
+    border-bottom: 0.08em solid $secondaryColor
+}
+tr:hover > td .displayIcon {
+    color:  #91DFDA !important;
+}
+//ILC general details
+.form-header{
+    color: $darkerPrimaryColor;
+    //font-size: 20px !important; Karam commented and added below
+    font-size: 14px !important;
+}
+.form-header .subheader-title{
+    color: $darkerPrimaryColor;
+}
+// copied as it is from CBQ till .FCC fcc-product-component
+.mat-checkbox-disabled .mat-checkbox-checkmark {
+    background-color: $secondaryColor;
+}
+.toggle-chip .mat-button-toggle-group.mat-button-toggle-group-appearance-standard .mat-button-toggle.mat-button-toggle-checked .mat-button-toggle-button {
+    color: #fff !important; 
+    background-color:  #91DFDA !important;
+    border-radius: 16px;
+}
+// .mat-button-toggle-group.mat-button-toggle-group-appearance-standard .mat-button-toggle.mat-button-toggle-checked .mat-icon {
+//     color:  #002A30 !important; 
+//     background-color:  #91DFDA !important;
+//     border-radius: 16px;
+// }
+
+.uxg-filtering-toggle-group.mat-button-toggle-group.mat-button-toggle-group-appearance-standard .mat-button-toggle.mat-button-toggle-checked {
+    border-color: transparent !important;
+    color: #121212 !important;
+    background-color: #FFF !important;
+    font-size: 16px !important;
+}
+// #mat-button-toggle-1{
+//     border-radius: 10px 0px 0px 10px !important;
+//     color:  #002A30 !important;
+// }
+// #mat-button-toggle-7{
+//     border-radius: 0px 10px 10px 0px !important;
+// }
+//mat-button-toggle mat-button-toggle-appearance-standard ng-star-inserted.mat-button-toggle-checked
+.fileUploadClass .ui-dialog-titlebar.ui-widget-header {
+    background-color:  #91DFDA!important;
+    color: #ffffff !important;
+    border: none !important;
+}
+.FCC fcc-trade-confirmation-dialog .ConfirmButton {
+    color: #ffffff !important;
+    background-color: $secondaryColor;
+    border: .0625em solid  #002A30!important;
+}
+.mat-calendar-body-selected {
+    background-color: $secondaryColor;
+}
+
+//.FCC fcc-product-component 
+.form-header.terms-pdf{
+    background-color: transparent !important;
+    border: none !important;
+    color:  #91DFDA !important;
+    padding: none !important;
+    text-align: left !important;
+    text-decoration: none !important; //font-size
+    display: none !important;
+}
+.iconImage:hover{
+    color: $secondaryColor;
+}
+
+//footer.component
+.FCC fcc-common-footer .footer-content {
+    color:  #002A30 !important;
+}
+.FCC fcc-common-footer .footer-content a {
+    color:  #002A30 !important;
+}
+.FCC fcc-common-footer .focus a:focus {
+    outline: .125em solid  #91DFDA !important;
+}
+//LOGIN
+.FCC fcc-common-login .supportStyle {
+    color:  #002A30 !important; 
+}
+.ui-inputtext .ui-corner-all .ui-state-default .ui-widget .ng-dirty .ng-valid .ui-state-filled .ng-touched {
+    background:  #002A30 !important;
+}
+.FCC .ui-inputtext:enabled:focus:not(.ui-state-error) {
+    border-color:  #002A30 !important;
+    border-bottom: 0.08em solid  #002A30 !important;
+}
+// commented because it ruins the template/Existing LC/upload part of the LC
+// .ng-star-inserted{
+//     color: #2B2B2B !important;;
+// }
+
+// the invalid session alert that comes on login page
+.ui-toast .ui-toast-message.ui-toast-message-success{
+    border-left: 0.6875em solid  #002A30 !important;
+}
+
+// page numbers
+.ui-paginator .ui-paginator-pages .ui-paginator-page.ui-state-active {
+    background-color: #D9D9D9 !important; //d4bdbd
+}
+.pi-chevron-down:before {
+    color:  #002A30 !important;
+}
+.FCC fcc-table .ui-dropdown-panel .ui-dropdown-items .ui-dropdown-item.ui-state-highlight {
+    color:  #002A30 !important;
+    border-left: 0.4em solid  #002A30 !important;
+	background-color: #D9D9D9 !important;
+}
+// copied as it is from CBQ (but this selector is same as above
+.FCC .ui-dropdown-panel .ui-dropdown-items .ui-dropdown-item.ui-state-highlight {
+    color: $secondaryColor;
+    border-left: 0.4em solid $secondaryColor;
+}
+// copied as it is from CBQ (but this selector is same as the two above
+.ui-dropdown-panel .ui-dropdown-items .ui-dropdown-item.ui-state-highlight {
+    color: $secondaryColor;
+    border-left: 0.4em solid $secondaryColor;
+}
+.FCC .ui-dropdown-panel .ui-dropdown-items .ui-dropdown-item.ui-state-highlight:hover{
+    background-color: #fff !important;
+}
+.FCC .ui-dropdown-panel .ui-dropdown-items .ui-dropdown-item:not(.ui-state-highlight):hover{
+    border-left: 0.4em solid  #91DFDA !important;
+    background-color: #fff !important;
+}
+.mat-checkbox-label{
+    color: #121212 !important;
+}
+.FCC .mat-checkbox-checked .mat-checkbox-checkmark {
+    background:  #91DFDA !important;
+}
+.mat-drawer-content {
+    margin-top: 3em !important;
+}
+
+.FCC .mat-option.mat-active {
+    background-color: transparent !important;
+    color:  #91DFDA !important;
+    border-left: 0.4em solid  #91DFDA !important;
+}
+.mat-option.mat-active:hover:not(.mat-option-disabled), .mat-option.mat-active:focus:not(.mat-option-disabled) {
+    border-left: 0.4em solid  #91DFDA !important;
+    border-right: none !important;
+}
+.FCC .mat-option:hover:not(.mat-option-disabled), .FCC .mat-option:focus:not(.mat-option-disabled) {
+    border-left: 0.4em solid rgba(183, 224, 255, 0.4) !important;
+    border-right: none !important;
+    background-color: rgba(0, 82, 149, 0.04) !important;
+}
+.ui-float-label .ui-dropdown.ui-widget {
+    border-bottom:  0.0652em solid  #91DFDA !important;
+}
+.applicant_bene_entity_class, .mat-form-field-appearance-fill .mat-form-field-flex.ng-tns-c246-307 {
+    background-color: #FFFFFF !important; // Khaled Changes
+        //background-color: #fff !important; // Karam added
+        //background-color: #fff !important;
+}
+// .mat-checkbox {
+//     background:  #91DFDA !important;
+//     box-shadow: 0 0 0 0.2em $secondaryColor !important;
+//     transition: background 400ms cubic-bezier(0.25, 0.8, 0.25, 1),box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1) !important;
+//     cursor: pointer !important;
+//     -webkit-tap-highlight-color: transparent !important;
+// }
+.mat-slide-toggle.mat-checked .mat-slide-toggle-bar, .mat-slide-toggle.mat-checked .mat-slide-toggle-thumb {
+    background-color:  #91DFDA !important;
+}
+.mat-progress-bar-buffer .mat-progress-bar-element{
+    background-color: #fff !important;
+}
+.mat-form-field-appearance-fill .mat-form-field-flex {
+    background-color: #D9D9D9 !important;
+}
+// .mat-form-field-appearance-fill .mat-form-field-flex:hover {
+//     border-bottom: 2px solid  #91DFDA !important;
+// }
+// .mat-form-field-appearance-fill .mat-form-field-flex:active {
+//     border-bottom: 2px solid  #91DFDA !important;
+// }
+// mat-form-field .mat-form-field-appearance-fill .mat-form-field-flex:hover {
+//     border-bottom: 2px solid  #91DFDA !important;
+// }
+// mat-form-field .mat-form-field-appearance-fill .mat-form-field-flex:active {
+//     border-bottom: 2px solid  #91DFDA !important;
+// }
+.mat-calendar-body-cell-content.mat-focus-indicator.mat-calendar-body-selector {
+    background-color:  #91DFDA !important;
+}
+.FCC .subheader-title {
+    color:  $darkerPrimaryColor;
+    margin-bottom: 0em!important;
+    font-size: 20px !important;
+}
+
+.subheader-title-h4 {
+    margin-bottom: 0em!important;
+}
+
+.ui-progress-spinner-circle {
+    animation: ui-progress-spinner-dash 1.5s ease-in-out infinite, #91DFDA 6s ease-in-out infinite !important;
+}
+// copied as it is from CBQ till next comment
+.returnCommentsStyle .ui-inplace .ui-inplace-display .material-icons {
+    color: $secondaryColor;
+}
+.returnCommentsStyle .ui-inplace .ui-inplace-content .mat-card {
+    background-color: #F8F8F8 !important;
+    border: 1.5px solid #F8F8F8 !important;
+}
+.returnCommentsStyle .ui-inplace .ui-inplace-content .mat-card-header-text {
+    color: $secondaryColor;
+}
+.returnCommentsStyle .ui-inplace .ui-inplace-content .ui-button:enabled:focus { 
+    box-shadow: 0 0 0 0.2em $secondaryColor;
+}
+.returnCommentsStyle .ui-inplace .ui-inplace-content .ui-button.ui-button-icon-only .ui-button-icon-left { 
+    color: $secondaryColor;
+}
+.card-header-style {
+    background-color: $secondaryColor;
+}
+.content-style {
+    background-color: #fff !important;
+}
+.warningHeaderStyle .ui-inplace .ui-inplace-display .material-icons {
+    color: $secondaryColor;
+}
+//application and beneficiary details
+.applicant_bene_entity_class {
+    background-color: #fff !important; //#e9e5f9c9;
+}
+.FCC fcc-trade-bank-details .mat-tab-label.mat-tab-label-active:not(.mat-tab-disabled), .FCC fcc-trade-bank-details .mat-tab-label.mat-tab-label-active.cdk-keyboard-focused:not(.mat-tab-disabled) {
+    color:  #91DFDA !important; // #002A30 !important;
+}
+// was commented before
+.section-top {
+    background-color: #fff !important;
+}
+.FCC .mat-checkbox-inner-container .mat-checkbox-input:checked{
+    color:  #91DFDA !important;
+}
+#backToBackLC .ng-star-inserted .browseButton{
+    border: 0.0625em solid  #91DFDA !important;
+    color:  #91DFDA !important;
+}
+.browseButton{
+    border-color:  #91DFDA !important;
+    color:  #91DFDA !important;
+}
+#backToBackLC{
+    border: 0.0625em solid  #91DFDA !important;
+    color:  #91DFDA !important;
+}
+.select-msg-width .hintForBackToBack {
+    background: rgba(0, 82, 149, 0.08);
+}
+#autoFocusDiv .section-top div{
+    background-color: #F8F8F8 !important;
+}
+.FCC .no-margin-multiselect{
+    background-color: #fff !important;
+}
+.mat-checkbox-inner-container:checked{
+    background-color:  #91DFDA !important;
+}
+// dashbaord widget
+.FCC .dashboardLayout{
+    background-color: #fff !important;
+}
+.FCC .ui-dropdown-trigger-icon .ui-clickable .ng-tns-c94-30 .fa .fa-angle-down{
+    color:  #91DFDA !important;
+}
+.FCC .view-all-links a {
+    color:  #91DFDA !important;
+}
+.event-date-label{
+    color:  #91DFDA !important;
+}
+// Hidden menu/pane that we get when clicking 3 bars on the left
+.FCC fcc-common-header .ui-slidemenu .ui-menuitem.ui-menuitem-active > .ui-menuitem-link > .ui-menuitem-text {
+    color:  #002a30 !important;
+}
+.FCC fcc-common-header .ui-slidemenu .ui-menuitem.ui-menuitem-active > .ui-menuitem-link {
+    border-left: 0.788em solid  #002a30 !important;
+}
+.FCC fcc-common-header .sideNavClass .ui-slidemenu .ui-menuitem-link:hover {
+    border-left: 0.788em solid  #91DFDA !important;
+    background-color: transparent !important;
+}
+// logout
+.FCC fcc-common-ux-logout .generic-text {
+    color:  #91DFDA !important;
+}
+.pi-star:before {
+    color: #EBC340 !important;
+}
+.pi-star-o:before {
+    color: #EBC340 !important;
+}
+.mat-stroked-button.mat-accent {
+    border-color: rgb(38, 162, 255, 0.5) !important;
+}
+.mat-stroked-button.mat-accent:hover {
+    background-color: #fff !important;
+}
+.FCC .focus.mat-focus-indicator.mat-button-wrapper{
+    color:  #91DFDA !important;
+}
+//components from warcontent\content\fccui-src\src\styles\fcc-branding.scss
+
+/* Start Primary Button css */
+.FCC .primaryButton:focus {
+    box-shadow: 0 0 0 0.125em #91DFDA !important;
+    background-color: #91DFDA !important;
+    border-radius: 4px !important;
+}
+
+.FCC .primaryButton:active {
+    background-color: #91DFDA !important;
+    box-shadow: none !important;
+    border-radius: 4px !important;
+}
+/* End Primary Button css */
+
+/* Start Secondary Button css */
+.FCC .secondaryButton:focus {
+    box-shadow: 0 0 0 0.1em #2B2B2B !important;
+}
+.FCC .secondaryButton:active {
+    background-color: #fff !important;
+    box-shadow: none !important;
+}
+/* End Secondary Button css */
+
+/* Start Tertiary Button css */
+.FCC .tertiaryButton {
+    color: #002A30 !important; // Khaled Changes
+    border: 0.0625em solid #002A30 !important; //0.0625em solid $FUCHSIA-F100
+    background-color: #FFFFFF !important;
+}
+.FCC .tertiaryButton:hover {
+    background-color: #D9D9D9 !important;
+    border: 0.0625em solid #D9D9D9 !important;
+    box-shadow: none !important;
+    color: #fff !important;
+}  
+.FCC .tertiaryButton:focus {
+    box-shadow: 0 0 0 0.125em  #91DFDA !important;
+}
+.FCC .tertiaryButton:active {
+    background-color:  rgba(38, 161, 255, 0.315) !important;
+    box-shadow: none !important;
+}
+.FCC .tertiaryButton.ui-button.ui-button-text-only .ui-button-text {
+    color: $secondaryColor;
+}
+/* End Tertiary Button css */
+
+/* Start Candy Stripped Table css */
+.FCC .candyStriped .ui-table .ui-table-thead > tr {
+    border-bottom: 0.065em solid #E6E6E6 !important;
+    background-color: #fff !important;
+}
+.FCC .candyStriped .ui-table .ui-table-thead > tr > th {
+    color: #2B2B2B !important; //CHARCOAL-PRIMARY-COLOR
+}
+.FCC .candyStriped .ui-table .ui-table-tbody > tr {
+    border-top: 0.065em solid #E6E6E6 !important;
+    border-bottom: 0.065em solid #E6E6E6 !important;
+}
+.FCC .candyStriped .ui-table .ui-table-tbody > tr:nth-child(odd) {
+    background-color: white !important;
+}
+.FCC .candyStriped .ui-table .ui-table-tbody > tr:nth-child(even) {
+    background-color: #fff !important;
+}
+.FCC .candyStriped .ui-table .ui-table-tbody > tr > td {
+    color: #2B2B2B !important;
+}
+.FCC .candyStriped .ui-table .ui-table-tbody > tr:hover > td {
+    // background-color: #fff !important; // Khaled Changes
+}
+/* Doesn't seem to take effect
+--This section doesn't have a color defined--
+.candyStriped .ui-table .ui-table-tbody > tr.selectableCursor:hover > td {
+      cursor: pointer !important;
+}
+.candyStriped .ui-table .ui-table-tbody > tr > td .displayIcon {
+    visibility: hidden !important;
+}
+.candyStriped .ui-table .ui-table-tbody > tr:hover > td .ellipisis {
+    cursor: pointer !important;
+    visibility: visible !important;
+}
+
+.candyStriped .ui-table .ui-table-tbody > tr:hover > td .displayIcon {
+    color: $secondaryColor;
+}*/
+/* End Candy Stripped Table css */
+
+.ellipisis{
+    visibility: visible !important;
+}
+  
+/* Start Candy Stripped(Even) Table css */
+.FCC .candyStripedEven .ui-table .ui-table-thead > tr {
+    border-bottom: 0.125em solid #E6E6E6 !important;
+}
+.FCC .candyStripedEven .ui-table .ui-table-thead > tr > th {
+    background-color: #ffffff !important;
+    color: #2B2B2B !important;
+}
+.FCC .candyStripedEven .ui-table .ui-table-tbody > tr {
+    border-top: 0.065em solid #E6E6E6 !important;
+    border-bottom: 0.065em solid #E6E6E6 !important;
+}
+.FCC .candyStripedEven .ui-table .ui-table-tbody > tr:nth-child(odd) {
+    background-color: #fff !important;
+}
+.FCC .candyStripedEven .ui-table .ui-table-tbody > tr:nth-child(even) {
+    background-color: #ffffff !important;
+}
+.FCC .candyStripedEven .ui-table .ui-table-tbody > tr > td {
+    color: #2B2B2B !important;
+}
+.FCC .candyStripedEven .ui-table .ui-table-tbody > tr:hover > td {
+    background-color: #fff !important;
+  }
+/* End Candy Stripped(Even) Table css */
+  
+/* Start Plain Table css */
+.FCC .plainTable .ui-table .ui-table-thead > tr {
+    border-bottom: 0.125em solid #E6E6E6 !important;
+}
+.FCC .plainTable .ui-table .ui-table-thead > tr > th {
+    background-color: #ffffff !important;
+    color: #2B2B2B !important;
+}
+.FCC .plainTable .ui-table .ui-table-tbody > tr {
+    border-top: 0.065em solid #E6E6E6 !important;
+    border-bottom: 0.065em solid #E6E6E6 !important;
+}
+.FCC .plainTable .ui-table .ui-table-tbody > tr > td {
+    background-color: #ffffff !important;
+    color: #2B2B2B !important;
+}
+.FCC .plainTable .ui-table .ui-table-tbody > tr:hover > td {
+    background-color: #fff !important;
+}
+
+//everything after this has been copied as it is from CBQ
+.FCC fcc-table .ui-table .ui-table-thead > tr {
+    border-bottom: 0.065em solid #E6E6E6 !important;
+    background-color: #fff !important;
+}
+
+//carousel component
+.FCC fcc-carousel .ui-carousel-viewport .ui-carousel-items .ui-carousel-item:hover {
+    box-shadow: 0.125em 0.125em 0.625em 0em #E6E6E6,
+    -0.125em -0.125em 0.625em 0em #E6E6E6 !important;
+}
+.FCC fcc-carousel .ui-carousel .ui-carousel-header {
+    background-color: transparent !important;
+    border: 0em solid #D9D9D9 !important;
+}
+.FCC fcc-carousel .ui-carousel .ui-carousel-viewport {
+    border: 0em solid #D9D9D9 !important;
+}
+.FCC fcc-carousel .ui-carousel .ui-carousel-viewport .ui-carousel-items .ui-carousel-item {
+    border:none !important;
+    border-right: 0.0625em solid #E6E6E6 !important;
+}
+.FCC fcc-carousel .ui-carousel .ui-carousel-dots-container .ui-carousel-dot-item.ui-state-highlight .ui-carousel-dot-icon {
+    background-color: $secondaryColor;
+} 
+.FCC fcc-carousel .ui-carousel .ui-carousel-content .ui-carousel-next:not(.ui-state-disabled):hover {
+  color: $secondaryColor;
+}
+.FCC fcc-carousel .ui-carousel .ui-carousel-content .ui-carousel-prev:not(.ui-state-disabled):hover {
+    color: $secondaryColor;
+}
+.subHeader {
+    color: $secondaryColor;
+}
+.cardTextStyle2 {
+    color: $secondaryColor;
+}
+.heading {
+    background: $primaryColor;
+}
+//checkbox components
+.FCC fcc-common-checkbox .checkboxStyleClass .ui-chkbox .ui-chkbox-box.ui-state-active.ui-state-focus {
+  border-color: $secondaryColor;
+  background-color: $secondaryColor;
+  color: #ffffff !important;
+}
+
+.FCC fcc-common-checkbox .checkboxStyleClass .ui-chkbox .ui-chkbox-box.ui-state-active {
+  border-color: $secondaryColor;
+  background-color: $secondaryColor;
+  color: #ffffff !important;
+}
+
+.FCC fcc-common-checkbox .checkboxStyleClass .ui-chkbox .ui-chkbox-box.ui-state-active.ui-state-focus {
+  border-color: $secondaryColor;
+  background-color: $secondaryColor;
+  color: #ffffff !important;
+}
+
+.FCC fcc-common-checkbox .checkboxStyleClass .ui-chkbox .ui-chkbox-box.ui-state-active:not(.ui-state-disabled):hover {
+  border-color: $secondaryColor;
+  background-color: $secondaryColor;
+  color: #ffffff !important;
+}
+
+.FCC fcc-common-checkbox .checkboxStyleClass .ui-chkbox-box .ui-widget .ui-corner-all .ui-state-active .ui-state-active {
+  border-color: $secondaryColor;
+  background-color: $secondaryColor;
+  color: #ffffff !important;
+}
+//multiselect items
+.FCC fcc-multiselect .ui-multiselect-panel .ui-multiselect-items .ui-multiselect-item.ui-state-highlight {
+    color: #ffffff !important;
+    background-color: $secondaryColor;
+}
+
+.FCC fcc-multiselect .ui-chkbox .ui-chkbox-box.ui-state-active {
+    background: #fff !important;
+    border: none !important;
+}
+//Login-auth component
+.authHeader {
+    color: $secondaryColor;
+}
+.otpErrorMsg {
+    color: #D72626 !important;
+}
+.otpTimer {
+    border: 0.0068em solid $primaryColor;
+    background-color: #D9D9D9 !important; //#A8AFEB = $otpTimerBackgroundColor
+    color: $primaryColor;
+}
+//master-view-detail component
+.top-wrapper{
+    background-color: $secondaryColor;
+}
+//new-phrase component 
+.phraseHeader{
+    color:  #2B2B2B !important;
+}
+.FCC fcc-new-phrase .fcc-dropdown .ui-dropdown-trigger.ui-state-default.ui-corner-right {
+    border-bottom: 0.0625em solid $secondaryColor;
+}
+.FCC fcc-new-phrase .angular-editor-textarea {
+    border-bottom: 0.06em solid $secondaryColor;
+    background: #D9D9D9 !important;
+}
+//product-listing component
+.pageTitleBar {
+    color: $secondaryColor;
+}
+.FCC fcc-common-productlisting .view-drp .ui-dropdown-label {
+    color: $secondaryColor;
+}
+.FCC fcc-common-productlisting .ui-tabmenu .ui-tabmenu-nav li {
+    border: 0.0625em solid transparent !important;
+    background-color: #fbfbfb !important;
+}
+// body > app-root > div > fcc-common-productlisting > mat-drawer-container > mat-drawer-content > div > div > div:nth-child(3) > div > div > p-tabmenu > div > ul > li:nth-child(1) {
+//     border-radius: 10px 0px 0px 10px !important;
+// }
+// body > app-root > div > fcc-common-productlisting > mat-drawer-container > mat-drawer-content > div > div > div:nth-child(3) > div > div > p-tabmenu > div > ul > li:nth-child(7) {
+//     border-radius: 0px 10px 10px 0px !important;
+// }
+.ui-accordion-header.ui-state-default.ui-corner-all.ng-tns-c72-12.ui-state-active {
+    width: 160px !important;
+}
+.FCC fcc-common-productlisting .ui-tabmenu .ui-tabmenu-nav li:hover {
+    color: #fff !important;
+    border: 0.0625em solid  #002A30 !important;
+    background-color:  #002A30 !important;
+}
+.FCC fcc-common-productlisting .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-default:not(.ui-state-active) .ui-menuitem-text{
+    color:  #91DFDA !important;
+    font-size: 17px !important;
+}
+.FCC fcc-common-productlisting .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem:not(.ui-state-active):not(.ui-state-disabled):hover .ui-menuitem-link .ui-menuitem-text{
+    color: #fff !important;
+}
+.FCC fcc-common-productlisting .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active {
+    background-color:  #91DFDA !important;
+}
+/*.threeDots{
+    background-color: $secondaryColor;
+}*/
+.threeDots:focus{
+    box-shadow: 0 0 0 0.125em $secondaryColor;
+}
+.approveButton {
+    background-color: $secondaryColor;
+}
+.deleteButton {
+    background-color: $secondaryColor;
+}
+.rejectButton {
+    color: $secondaryColor;
+}
+.FCC fcc-common-productlisting .ui-tabmenu ul li > a:focus {
+    border: .125em solid $secondaryColor;
+}
+.primaryButton1:hover {
+    background-color: #fff !important;
+    border: 0.0625em solid #fff !important;
+}
+.primaryButton1 {
+    border: 0.0625em solid $secondaryColor;
+    background-color: $secondaryColor;
+}
+// re-auth component == app-re-auth
+#validateBtn {
+    background-color: $secondaryColor;
+}
+.validateBtnArabic {
+    background-color: $secondaryColor;
+}
+// review-detail component
+.FCC app-review-detail .ui-card {
+    color: #2B2B2B !important;
+}
+.top-wrapper{
+    background-color: $primaryColor;
+}
+.lc-small-text{
+    color: #fff !important;
+}
+.lc-large-text{
+    color: #fff !important;
+}
+.medium-text{
+    color:#fff !important;
+}
+.border-class{
+    border-right: 0.0625em solid #FFF !important;
+}
+.border-class-left{
+    border-left: 0.0625em solid #FFF !important;
+}
+.small-text-c {
+    color: #fff !important;
+}
+// review-detail-table component
+.title {
+    color: $secondaryColor;
+}
+.block1{
+    color:  #002A30 !important;
+}
+.FCC .block1{
+    color:  #002A30 !important;
+}
+.block2 {
+    color:  #002A30 !important;
+}
+.FCC .block2 {
+    color:  #002A30 !important;
+}
+.refnum{
+    color: $secondaryColor;
+}
+.FCC app-review-header .ui-card {
+    color: #2B2B2B !important;
+}
+.FCC app-review-header .primaryButton1{
+    border: 1px solid $primaryColor;
+}
+.FCC app-review-header .primaryButton.primaryButton1:hover, .FCC app-review-header .primaryButton.primaryButton1:focus {
+    background-color: #D9D9D9 !important;
+    border: 0.0625em solid #D9D9D9 !important;
+}
+.FCC app-review-header .primaryButton2{
+    background-color: $primaryColor;
+}
+.FCC app-review-header .primaryButton2:hover {
+    background-color: #D9D9D9 !important;
+    border: 0.0625em solid #D9D9D9 !important;
+}
+.FCC app-review-header .primaryButton1:hover.ui-button.ui-button-text-only .ui-button-text, .FCC app-review-header .primaryButton1:focus.ui-button.ui-button-text-only .ui-button-text {
+    color: #fff !important;
+}
+.FCC app-review-header .primaryButton1.ui-button.ui-button-text-only .ui-button-text, .FCC app-review-header .primaryButton1.ui-button.ui-button-text-only .ui-button-text {
+    color: $primaryColor;
+}
+.pdfIcon:hover {
+    color:  #002A30 !important;
+}
+.FCC app-review-header .primaryButton2.ui-button.ui-button-text-only .ui-button-text {
+    color:  #002A30 !important;
+}
+.FCC .top-wrapper {
+    background-color:  #002A30 !important;
+}
+.FCC .applicant_bene_entity_class, .mat-form-field-appearance-fill .mat-form-field-flex {
+    //background-color: #fff !important;
+    //background-color: #fff !important;//Karam added
+    background-color: #FFFFFF !important; // Khaled Changes
+}
+
+.FCC app-review-header .journey-button {
+    background-color:  #002A30 !important;
+}
+.FCC app-review-header .primaryButton.journey-button:hover, .FCC app-review-header .primaryButton.journey-button:focus {
+    background-color: #D9D9D9 !important; //#9e9898
+}
+.FCC app-review-tab .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active {
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom: 0.25em solid #2B2B2B !important;
+    color: #2B2B2B;
+}
+//copied as it is from CBQ
+.FCC app-review-tab .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active:hover {
+    border-bottom: 0.25em solid  #91DFDA !important;
+}
+.FCC app-review-tab .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active a {
+    color: #2B2B2B !important;
+}
+.FCC app-additional-info-tab .additionalClass {
+    color: $primaryColor;
+}
+.FCC .applicant_bene_entity_class {
+    background-color: #fff !important; //#e9e5f9c9;
+}
+
+.FCC .mat-form-field-appearance-fill .mat-form-field-flex.ng-tns-c246-10 {
+    background: #E6E6E6 !important;
+}
+
+.FCC .mat-form-field-flex.ng-tns-c246-10{
+    background-color: #fff !important;
+}
+
+.FCC .mat-form-field-ripple.ng-tns-c246-10 {
+    background-color:  #91DFDA!important;
+    transition: background-color .3s cubic-bezier(.55,0,.55,.2);
+}
+.FCC .mat-form-field-appearance-fill .mat-form-field-flex.ng-tns-c246-10:hover .mat-form-field-ripple.ng-tns-c246-10{
+    background-color:  #91DFDA!important;
+}
+
+.FCC .LC_background {
+    background-color: #F8F8F8 !important; //#f6e1f1
+}
+.FCC fcc-summary-details .mat-expansion-panel-header {
+    background-color: #E6E6E6 !important;
+    border-radius: 0.125em !important;
+}
+.FCC fcc-summary-details .mat-expansion-panel-header:focus {
+    outline: .125em solid  #91DFDA !important;
+}
+.FCC .panelHeadStyle {
+    color:  #002A30 !important;
+}
+.ui-datepicker table td.ui-datepicker-today > a.ui-state-active, .ui-datepicker table td.ui-datepicker-today > span.ui-state-active {
+    background-color: #F8F8F8 !important;
+}
+//filter section on landing page = transactions-listdef.component
+// .mat-button-toggle-group.mat-button-toggle-group-appearance-standard .mat-button-toggle.mat-button-toggle-checked:first-of-type .mat-button-toggle-button {
+//     border-top-left-radius: 10px !important;
+//     border-bottom-left-radius: 10px !important;
+//     background-color: #fbfbfb00 !important;
+//     color: white !important;
+//     border-color: transparent !important;
+// }
+.clearFilter {
+    color:  #91DFDA !important;
+}
+.adv-clear-all {
+    color:  #91DFDA !important;
+}
+.addPhraseButton {
+    color: #91DFDA !important;
+    border-color: #91DFDA !important;
+}  
+.addPhraseButton:hover {
+     background-color:  #002A30 !important;
+}
+.addPhraseButton:focus {
+    background-color: #fff !important;
+}
+
+:root{
+    --color-gradient:  #91DFDA, #fff,  #002A30 !important; 
+    --color-primary: 0, 82, 149;
+    --color-primary-lighter: 231, 249, 2401;
+    //--color-primary-darker: 6, 5, 70;
+    //--color-secondary: 193, 55, 162;
+    //--color-secondary-lighter: 249, 154, 224;
+    //--color-secondary-darker: 141, 0, 115;
+    --color-warn: 228, 0, 70;
+    --color-warn-lighter: 234, 63, 116;
+    --color-warn-darker: 159, 0, 48;
+    --text-color-primary: 255, 255, 255;
+    --text-color-primary-lighter: 65, 65, 65;
+    --text-color-primary-darker: 65, 65, 65;
+    --text-color-secondary: 255, 255, 255;
+    --text-color-secondary-lighter: 65, 65, 65;
+    --text-color-secondary-darker: 255, 255, 255;
+    --text-color-warn: 255, 255, 255;
+    --text-color-warn-lighter: 255, 255, 255;
+    --text-color-warn-darker: 255, 255, 255;
+    --text-color-gradient: 255, 255, 255;
+}
+
+.uxg-card-product.mat-card{
+	background:bottom left/100% 120% no-repeat url("data:image/svg+xml,%3Csvg version='1.1' id='L  _1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 320 246' style='enable-background:new 0 0 320 246;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%23FFFFFF;%7D%0A%3C/style%3E%3Cpath class='st0' d='M320,0v218.3c-2.8,2.1-5.7,4.2-8.6,6.2c-57.1,39.1-132,15.1-180.5,3.3C114.2,223.8,65.3,206.1,0,194V0H320z'/%3E%3C/svg%3E%0A"),-webkit-gradient(linear, left top, right top, from(var(--color-gradient))) !important;
+	background:bottom left/100% 120% no-repeat url("data:image/svg+xml,%3Csvg version='1.1' id='L  _1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 320 246' style='enable-background:new 0 0 320 246;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%23FFFFFF;%7D%0A%3C/style%3E%3Cpath class='st0' d='M320,0v218.3c-2.8,2.1-5.7,4.2-8.6,6.2c-57.1,39.1-132,15.1-180.5,3.3C114.2,223.8,65.3,206.1,0,194V0H320z'/%3E%3C/svg%3E%0A"),linear-gradient(90deg, var(--color-gradient)) !important;
+}
+
+.mat-form-field-appearance-fill .mat-form-field-ripple {
+    background-color: rgba(var(--color-primary), 1) !important;
+}
+.mat-form-field-appearance-fill .mat-form-field-underline::before {
+    background-color:  #91DFDA !important;
+}
+input{
+    font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
+}
+.mat-form-field-appearance-fill {
+    font: 500 16px/24px 'Helvetica Neue', Helvetica, sans-serif !important;
+}
+// .mat-form-field-appearance-fill .mat-form-field-wrapper .mat-form-field-flex:hover {
+//     border-bottom-color:  #91DFDA !important;
+// }
+.mat-form-field-appearance-fill .mat-form-field-flex, .applicant_bene_entity_class {
+    //background: #fff !important; // Karam added
+    background-color: #FFFFFF !important; // Khaled Changes
+}
+
+.ui-dropdown span.ui-dropdown-label {
+    border-bottom: 0.06em solid transparent !important;
+    font-size: 16px !important;
+}
+.globalPadding .ui-dropdown .ui-dropdown-trigger {
+    border-bottom: 1px solid transparent !important;
+}
+// didn't work
+// .indented-text-area-field-65 .mat-form-field-flex {
+//     background-color: #fff !important;
+// }
+
+.FCC app-ec-document-details .ui-table .ui-table-tbody > tr > td{
+    border: 1px solid #616161 !important;
+}
+
+.FCC app-ec-document-details .ui-table-thead > tr > th{
+    background-color: #F8F8F8 !important;
+}
+
+.DragDropArea .ui-fileupload-content .pi.pi-cloud-upload {
+    color:  #002A30 !important;
+}
+
+// #filebrowseButton.ui-fileupload-buttonbar.ui-widget-header.ui-corner-top .ui-button-text.ui-clickable{
+//     background-color: #91DFDA !important;
+// }
+//#filebrowseButton > div > div.ui-fileupload-buttonbar.ui-widget-header.ui-corner-top > span
+
+body .ui-fileupload .ui-fileupload-buttonbar .ui-button {
+    background-color:  #91DFDA !important;
+}
+
+#browseButton{
+    border-color:  #002A30 !important;
+    color:  #002A30 !important
+}
+
+.browseButton:focus {
+    box-shadow: 0 0 0 .125em  #91DFDA !important;
+}
+
+.fileUploadClass.ui-dialog .ui-dialog-titlebar a.ui-dialog-titlebar-icon.ui-dialog-titlebar-close:focus {
+    box-shadow: 0 0 0 .2em  #002A30 !important;
+}
+
+.mat-datepicker-toggle-active .mat-datepicker-toggle-default-icon {
+    color:  #002A30 !important;
+}
+
+.mat-button-toggle-group.mat-button-toggle-group-appearance-standard .mat-button-toggle.mat-button-toggle-checked .mat-icon {
+    color:  #002A30 !important;
+    background-color:  #002A30cc !important;
+}
+
+.FCC fcc-trade-confirmation-dialog .ConfirmButton:focus, .FCC fcc-trade-confirmation-dialog .ConfirmButton:hover {
+    background-color: #007bffcc !important;
+}
+
+button.mat-focus-indicator.secondaryButton.addPhraseButton.mat-button.mat-button-base{
+    color: #002A30 !important;
+    border-color: #002A30 !important;
+}
+
+button.mat-focus-indicator.secondaryButton.addPhraseButton.mat-button.mat-button-base:hover{
+    background-color: #E6E6E6 !important;
+}
+
+// body > app-root > div > div > fcc-common-header > div > div.header-top > div:nth-child(1) > div > a:nth-child(8) > div > p-breadcrumb > div > ul > li > a > span
+
+a.breadCrumb div.NavBreadCrumb :hover{
+    color: #002A30 !important;
+}
+
+// a.non-event-dates{
+//     color: #E6E6E6 !important;
+// }
+
+.ui-datepicker table td>a.ui-state-active, .ui-datepicker table td>span.ui-state-active{
+    background-color: #E6E6E6 !important;
+}
+
+.authMsg1 {
+    color:  #91DFDA !important;
+}
+
+.ccyDisplay {
+    color:  #91DFDA !important;
+}
+
+.ui-datepicker:not(.ui-state-disabled) table td a:not(.ui-state-active):not(.ui-state-highlight):hover {
+    background-color: #fff !important;
+}
+
+.to-full {
+    color:  #91DFDA !important;
+}
+
+body .ui-table .ui-table-thead>tr>th {
+    background-color: #fff !important;
+}
+
+.mat-step-header[aria-selected=true] {
+    background-color: #fff !important;
+}
+
+.searchLayoutClass .ui-dialog-titlebar.ui-widget-header{
+    color:  #91DFDA !important;
+}
+
+a.breadCrumb {
+    margin-top: 1em !important;
+}
+
+.pi-forward {
+    margin-top: -0.7em !important;
+}
+.pi-forward:hover {
+    color:  #91DFDA !important;
+}
+
+//Note: the below didn't take effect
+.FCC fcc-common-header a.breadCrumb div.NavBreadCrumb:hover {
+    color:  #002a30 !important;
+}
+
+.ui-table .ui-table-tbody>tr:nth-child(even)>td {
+    background-color: #fff !important;
+}
+
+.ui-table .ui-table-thead>tr>.stickyAction {
+    background-color: #fff !important;
+}
+
+body .ui-button.ui-state-default.ui-button-secondary{
+    color: #FFF !important;
+}
+
+a.breadCrumb div.NavBreadCrumb .ui-breadcrumb ul li:first-child a.ui-menuitem-link span.ui-menuitem-text:hover {
+    color:  #91DFDA !important;
+}
+
+.NavBreadCrumb .ui-breadcrumb ul li:not(:first-child) a.ui-menuitem-link span.ui-menuitem-text:hover {
+    color:  #91DFDA !important;
+}
+
+.successTick {
+    margin-top: 6.5em !important;
+}
+
+.NavBreadCrumb .ui-breadcrumb ul li.ui-breadcrumb-chevron.pi.pi-chevron-right:before:hover {
+    color:  #002A30 !important;
+}
+
+.FCC .freezeAction {
+    background-color: #fff !important;
+}
+
+.transmission .uxg-filtering-toggle-group.mat-button-toggle-group.mat-button-toggle-group-appearance-standard .mat-button-toggle.mat-button-toggle-checked .mat-button-toggle-label-content{
+    color: #121212 !important;
+}
+
+.p-grid {
+    margin-top: -0.5em !important;
+}
+
+#userProfile span {
+    background: -webkit-linear-gradient( #91DFDA, #91DFDA 70%, #002A30 90%, #91DFDA) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+#userProfile:hover span {
+    background: -webkit-linear-gradient( #002A30,#002A30 70%,#91DFDA 90%,#002A30) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+.pd-lang {
+    padding: 25px 10px 0px!important;
+    display: flex;
+    justify-content: flex-end;
+}
+
+img.login-img {
+    width: 100% !important;
+    height: auto;
+}
+
+#footerMain{
+    padding-top: 1em !important;
+}
+
+.FCC fcc-common-login .label-below{
+    font-size: 14px !important;
+}
+
+body > app-root > div > fcc-common-login > div > div > div.p-col-12.p-md-12.p-lg-4.left-form > div > div.p-col-12.main-form-container > div > div.p-col-12.margi-top-retrieval.ng-star-inserted > div{
+    padding: 0 0 0 0 !important;
+}
+
+.pi-bars{
+    font-size: xx-large !important;
+}
+
+#openSideNav{
+    margin-top: 5px !important;
+}
+
+.FCC fcc-common-header .ng-menu .ui-menuitem-link .ui-menuitem-text, .mat-radio-label-content, .mat-step-text-label{
+    font-size: 18px;
+}
+
+.acc-balance-text, .authMsg2, #cdk-drop-list-2, .ui-table table, .candyStriped .ui-table .ui-table-thead>tr>th, .sectionHeader, .mat-step-label-selected, .mat-step-label, .saveTabButton, button#next, button#submit, .mat-slide-toggle-content, .savedTimer {
+    font-size: 16px !important;
+}
+
+.FCC .headerTitle, #transactionInProgress {
+    font-size: 20px !important;
+}
+
+.dataPadding, .headerFont, .progressBarValue {
+    font-size: 14px !important;
+}
+
+.headerPadding{
+    font-size: 12px !important;
+}
+
+.dataFont{
+    font-size: 15px !important;
+}
+
+#autoFocusComp1 > app-general-details-client > app-form-rendrer > form > div > div:nth-child(2) {
+    margin-top: 10px !important;
+}
+
+.FCC fcc-common-login .pd-lang .ui-inputtext{
+    font-size: 13px !important
+}
+
+#autoFocusComp1 > app-general-details-client > app-form-rendrer > form > div > div:nth-child(18) > fcc-text > div > div{
+    margin-bottom: 10px !important;
+}
+
+.horMenuCssClass {
+    margin-top: 3.5em !important;
+}
+
+.notifyBell {
+    height: 24px;
+    width: auto;
+}
+
+a:hover .notifyBell {
+    display:none;
+}
+
+a .notifyBellHover {
+    display:none;
+}
+
+a:hover .notifyBellHover{
+    display: inline-block;
+    height: 24px;
+    width: auto;
+}
+
+#notifyBell {
+    margin-top: -3px;
+}
+
+.pendingTask{
+    margin-top: -1.5px !important;
+}
+
+.msheader{
+    margin-top: -5px !important;
+}
+
+.mat-tab-label.mat-tab-label-active:not(.mat-tab-disabled), 
+.mat-tab-label.mat-tab-label-active.cdk-keyboard-focused:not(.mat-tab-disabled),
+ec-trade-bank-details .mat-tab-label.mat-tab-label-active:not(.mat-tab-disabled),
+ec-trade-bank-details .mat-tab-label.mat-tab-label-active.cdk-keyboard-focused:not(.mat-tab-disabled),
+fcc-trade-narrative-details .mat-tab-label.mat-tab-label-active:not(.mat-tab-disabled),
+fcc-trade-narrative-details .mat-tab-label.mat-tab-label-active.cdk-keyboard-focused:not(.mat-tab-disabled),
+:host ::ng-deep .tabGroup .mat-tab-label.mat-tab-label-active:not(.mat-tab-disabled),
+:host ::ng-deep .tabGroup .mat-tab-label.mat-tab-label-active.cdk-keyboard-focused:not(.mat-tab-disabled),
+:host ::ng-deep .innerTabGroup .mat-tab-label.mat-tab-label-active:not(.mat-tab-disabled),
+:host ::ng-deep .innerTabGroup .mat-tab-label.mat-tab-label-active.cdk-keyboard-focused:not(.mat-tab-disabled),
+:host ::ng-deep.mat-tab-label.mat-tab-label-active:not(.mat-tab-disabled),
+:host ::ng-deep.mat-tab-label.mat-tab-label-active.cdk-keyboard-focused:not(.mat-tab-disabled) {
+    color:  #91DFDA!important;
+}
+
+.FCC fcc-common-header .ng-header a em {
+    color: #002a30!important;
+}
+
+.FCC fcc-common-header .ng-header a #languageIcon {
+    color: #002a30!important;
+}
+
+.FCC fcc-common-header .ng-header a{
+    background-color: transparent !important; //#D9D9D9
+    color:  #002a30 !important;
+}
+.FCC fcc-common-header .ng-header a, .headset span{
+    color:  #002a30 !important;
+}
+
+// .ng-header .globe.ng-star-inserted:hover span{
+//     color:  #91DFDA !important; // #002A30
+// }
+.ng-header .headset.ng-star-inserted span#helpDesk{
+    color:  #002a30 !important; // #002A30
+}
+.ng-header .pendingTask.ng-star-inserted span#pendingTaskIcon{
+    color:  #002a30 !important; // #002A30
+}
+/*Globe, time and last login time
+.globe span{
+    color: #fff !important;
+} 
+.lastLoginContainer span.ng-star-inserted {
+    color: #fff !important;
+} */ 
+
+.FCC fcc-common-header .ng-header a:hover em {
+    color: #91DFDA!important;
+}
+
+.FCC fcc-common-header .ng-header a:hover #languageIcon {
+    color: #91DFDA!important;
+}
+
+.FCC fcc-common-header .ng-header a:hover{
+    background-color: transparent !important; //#D9D9D9
+    color:  #91DFDA !important;
+}
+.FCC fcc-common-header .ng-header a:hover, .headset span{
+    color:  #91DFDA !important;
+}
+
+.ng-header .headset.ng-star-inserted:hover span#helpDesk{
+    color:  #91DFDA !important; // #002A30
+}
+.ng-header .pendingTask.ng-star-inserted:hover span#pendingTaskIcon{
+    color:  #91DFDA !important; // #002A30
+}
+
+.divRow:hover .divCell {
+    border-bottom: .05em solid #91DFDA !important;
+    border-top: .05em solid #91DFDA !important;
+}
+
+.displayOnFocus{
+    color: #002A30 !important;
+}
+
+#advClearAll{
+    color: #002A30 !important;
+}
+
+.backDashboardButton {
+    background:  #91DFDA !important;
+    color: #000 !important;
+    border-radius: 4px !important;
+}
+
+.with-background {
+    background-image: url(/content/FCCUI/assets/images/gradient-card-pattern@1x.png),linear-gradient(to bottom,#91DFDA,#91DFDA);
+}
+
+#termsCheckbox {
+    padding-left: 0.5em !important;
+    padding-bottom: 0.8em !important;
+}
+
+.form-header.mandatory-terms{
+    color: #D72626 !important;
+    font-size: 0.8em !important;
+    font-weight: normal !important;
+    margin-top: -1em !important;
+    padding-bottom: 1em !important;
+    padding-top: 0.5em !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+button#saveAsNewBtn {
+    border-radius: 4px !important;
+}
+
+button#saveBtn {
+    border-radius: 4px !important;
+}
+
+
+button#applyBtn {
+    border-radius: 4px !important;
+}
+
+.FCC fcc-common-productlisting .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active {
+    background-color: transparent !important;
+    /* color: #000 !important; */
+}
+
+.FCC fcc-common-productlisting .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active .ui-menuitem-text {
+    color: #0D6976;
+}
+.FCC fcc-common-productlisting .ui-tabmenu .ui-tabmenu-nav li:hover {
+    color: #002A30!important;
+    border: none !important;
+    border-bottom: 3px solid #002A30 !important;
+}
+
+.FCC fcc-common-header .ng-menu .ui-menubar {
+    border: 1px solid transparent!important;
+    background-color: transparent!important;
+}
+
+.FCC fcc-common-header .ng-menu .ui-menuitem-link .ui-menuitem-text {
+    color: #002A30!important;
+    font-weight: 500;
+}
+
+.FCC fcc-common-header .ui-menubar .ui-menubar-root-list>.ui-menuitem>.ui-menuitem-link:hover, .FCC fcc-common-header .ui-menubar .ui-menubar-root-list>.ui-menuitem.ui-menuitem-active>.ui-menuitem-link {
+    background-color: Transparent!important;
+    border-bottom: 4px solid #91DFDA;
+}
+
+#headerLogout {
+    background-color: #91DFDA!important;
+    border-radius: 4px !important;
+}
+
+em#logout.pi.pi-sign-out {
+    color: #000!important;
+}
+
+span.log-out {
+    color: #000 !important;
+}
+.FCC fcc-common-productlisting .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem:not(.ui-state-active):not(.ui-state-disabled):hover .ui-menuitem-link .ui-menuitem-text {
+    color: #002a30!important;
+}
+.FCC fcc-common-productlisting .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-default:not(.ui-state-active) .ui-menuitem-text {
+    color: #002a30!important;
+    font-size: 17px!important;
+}
+
+.FCC fcc-common-productlisting .ui-tabmenu .ui-tabmenu-nav li:hover {
+    background-color: transparent!important;
+}
+
+.ng-header .logo-img img {
+    max-width: 250px!important;
+    max-height: 200px!important;
+    padding-top: 15px;
+}
+
+.FCC fcc-common-productlisting .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active {
+    background-color: transparent!important;
+    border-bottom: 3px solid #002a30 !important;
+    color: #002a30 !important;
+}
+
+.FCC .candyStriped .ui-table .ui-table-thead>tr {
+    border-bottom: 0.065em solid #E6E6E6!important;
+    background-color: #CCD4D6!important;
+}
+
+.FCC .candyStriped .ui-table .ui-table-thead>tr>th {
+    color: #2b2b2b!important;
+    background-color: #CCD4D6!important;
+}
+.candyStriped .ui-table .ui-table-tbody>tr:hover>td {
+    cursor: context-menu!important;
+    background-color: #f3f3fc!important;
+    font-weight: 600!important;
+}
+
+.FCC fcc-table .ui-paginator {
+    background-color: #CCD4D6!important;
+    border: 0.065em solid #CCD4D6!important;
+}
+
+a, .filterType {
+    color: #002a30!important;
+}
+
+.FCC fcc-table .ui-paginator .ui-paginator-pages .ui-paginator-page.ui-state-active {
+    background-color: #91DFDA!important;
+    color: #002a30!important;
+}
+
+.ui-paginator-right-content.ng-star-inserted {
+    color: #002a30 !important;
+}
+
+.FCC .secondaryButton:hover {
+    border: 0.0625em solid  #002A30 !important; // #002A30
+    color:  #002A30 !important;
+    border-radius: 4px !important;
+    border-radius: 4px!important;
+}
+
+.with-background, .rtlWith-Background {
+    padding-left: 0.5em!important;
+    background-image: url(/content/FCCUI/assets/images/gradient-card-pattern@1x.png),linear-gradient(to bottom,#91DFDA,#91DFDA) !important;
+    width: 12.25em;
+    height: 5.7em;
+    border: none !important;
+}
+
+body>app-root>div> fcc-common-global-dashboard >div>div.p-grid.p-justify-end.widgetCustomButtons.ng-star-inserted>div.p-col-12.p-md-6.p-lg-2.cursorCustomize.showWidgetIcons.ng-star-inserted>button, body>app-root>div>fcc-common-global-dashboard>div>div.p-grid.p-justify-end.widgetCustomButtons.ng-star-inserted>div:nth-child(3)>button {
+    border: 0.0625em solid #91DFDA!important;
+    background-color: #91DFDA!important;
+}
+
+.dashboard-background {
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 300px !important;
+    padding-top: 12px;
+    min-height: 10.75em;
+}
+
+
+.colmask {
+    top: 100px !important;
+    position: relative !important;
+    float: right !important;
+    width: 100% !important;
+    overflow: hidden;
+}
+button.backDashboardButton.ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-text-only{
+    background:  #91DFDA !important;
+    color: #000 !important;
+    border-radius: 4px !important;
+}
+
+.ui-button:enabled:hover{
+    background:  #AFE6E3 !important;
+    color: #000 !important;
+    border-radius: 4px !important;
+}
+
+.cardValue {
+    color: #002a30 !important;
+    font-size: 1.3em!important;
+}
+
+
+.FCC fcc-common-header .ng-menu.dirLtrStyle .ui-menubar .ui-submenu-list .ui-menuitem.ui-menuitem-active>.ui-menuitem-link {
+    border-left: 5px solid #91DFDA !important;
+    background-color: #d9d9d9!important;
+}
+
+.pageTitle {
+    color: #0D6976!important;
+}
+
+button.backDashboardButton.ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-text-only {
+    background: #91DFDA!important;
+    color: #000!important;
+    border-radius: 4px!important;
+    border: 0.0625em solid #91DFDA!important;
+}
+
+.pi-plus-circle:before,.pi-check:before,.pi-plus:before{
+    color:#000;
+}
