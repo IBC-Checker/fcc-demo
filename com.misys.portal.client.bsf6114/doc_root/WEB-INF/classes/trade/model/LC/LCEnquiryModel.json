@@ -1,0 +1,337 @@
+{
+  "pagePermission": "lc_access",
+  "LC": [
+    {
+      "enquiryHeaderComponent": {
+        "layoutClass": "p-grid",
+        "buttons": [
+          {
+            "buttonType": "importLcLanding",
+            "buttonName": "importLcLanding",
+            "layout": "12",
+            "styleClass": "primaryButton1",
+            "routerLink": "productListing",
+            "render": true,
+            "permission": "lc_access",
+            "queryParams": {
+              "productCode": "LC",
+              "subProductCode": "LCSTD",
+              "option": "GENERAL",
+              "tnxTypeCode": "01"
+            }
+          }
+        ],
+        "txnStatusButton": [
+          {
+            "MASTER": [
+              {
+                "buttonType": "amendment",
+                "buttonName": "SearchAmendment",
+                "layout": "12",
+                "styleClass": "primaryButton1",
+                "routerLink": "",
+                "render": false,
+                "permission": "lc_save"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "enquiryDetailComponent": {
+        "layoutClass": "p-col-12",
+        "noOfColoums": 4,
+        "Displaykeys": [
+          {
+            "apiMapping": "applicantName",
+            "label": "applicantHeader",
+            "feildType": "text",
+            "layoutClass": "p-col-2"
+          },
+          {
+            "apiMapping": "issueDate",
+            "label": "IssueDate",
+            "feildType": "date",
+            "layoutClass": "p-col-2"
+          },
+          {
+            "apiMapping": "bankReference",
+            "label": "BankReference",
+            "feildType": "text",
+            "layoutClass": "p-col-2"
+          },
+          {
+            "apiMapping": "beneficiaryEntity",
+            "label": "beneficiaryHeader",
+            "feildType": "text",
+            "layoutClass": "p-col-2"
+          },
+          {
+            "apiMapping": "amount",
+            "label": "lcheader",
+            "feildType": "amount",
+            "layoutClass": "p-col-2"
+          },
+          {
+            "apiMapping": "availableAmount",
+            "label": "AvailableAmount",
+            "feildType": "amount",
+            "layoutClass": "p-col-2",
+            "hideByProperty": true
+          },
+          {
+            "apiMapping": "expiryDate",
+            "label": "expiryDate",
+            "feildType": "date",
+            "layoutClass": "p-col-2"
+          },
+          {
+            "apiMapping": "currency",
+            "label": "currencyE",
+            "feildType": "currency",
+            "layoutClass": "p-col-2"
+          },
+          {
+            "apiMapping": "liabAmount",
+            "label": "LiabilityAmount",
+            "feildType": "amount",
+            "layoutClass": "p-col-2"
+          }
+        ]
+      }
+    },
+    {
+      "enquiryTabComponent": {
+        "layoutClass": "p-col-12",
+        "displayTabs": [
+          {
+            "transactionDetails": {
+              "permission": "",
+              "id": "TransactionDetails",
+              "label": "transactionDetails",
+              "child": {
+                "layoutClass": "p-col-12",
+                "componentKey": "reviewTransactionDetailsComponent",
+                "listdefPath": "",
+                "data": "render"
+              },
+              "enquiryButtonComponent": [
+                {
+                  "commentButtons": {
+                    "commentSection": {
+                      "name": "comments",
+                      "type": "narrative-textarea",
+                      "swift": false,
+                      "fieldSize": 65,
+                      "maxRowCount": 270,
+                      "enteredCharCount": 0,
+                      "rowCount": 0,
+                      "rows": 1,
+                      "cols": 51,
+                      "allowedCharCount": 13500,
+                      "maxlength": 13500,
+                      "disableNextLineCharCount": "true",
+                      "layoutClass": "p-col-6 p-md-6 p-lg-6 p-sm-12 leftwrapper padding_zero",
+                      "styleClass": [
+                        "indented-text-area-field-65"
+                      ],
+                      "rendered": false,
+                      "showValidationMessage": false,
+                      "hintTextControl": false,
+                      "hintText": "commentsHintText"
+                    },
+                    "RejectButton": {
+                      "name": "return",
+                      "type": "button",
+                      "rendered": false,
+                      "layoutClass": "p-col-5",
+                      "styleClass": "secondaryButton rightDirect",
+                      "required": false
+                    },
+                    "approveButton": {
+                      "name": "approve",
+                      "type": "button",
+                      "rendered": false,
+                      "layoutClass": "p-col-1",
+                      "styleClass": "primaryButton rightDirect",
+                      "required": false
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "events": {
+              "permission": "",
+              "id": "history",
+              "label": "events",
+              "child": {
+                "layoutClass": "p-col-12",
+                "componentKey": "reviewHistoryComponent",
+                "listdefPath": "/trade/listdef/customer/LC/LCApprovedOrRejectedByBank",
+                "data": "render"
+              }
+            }
+          },
+          {
+            "messages": {
+              "permission": "",
+              "id": "Messages",
+              "label": "messages",
+              "child": {
+                "layoutClass": "p-col-12",
+                "componentKey": "",
+                "listdefPath": "",
+                "data": "render"
+              }
+            }
+          },
+          {
+            "additionalInformation": {
+              "permission": "",
+              "id": "additionalInformation",
+              "label": "additionalInformation",
+              "child": {
+                "layoutClass": "p-col-12",
+                "componentKey": "additionalInfoTabComponent",
+                "listdefPath": "",
+                "data": "render"
+              }
+            }
+          },
+          {
+            "master": {
+              "permission": "",
+              "id": "master",
+              "label": "master",
+              "child": {
+                "layoutClass": "p-col-12",
+                "componentKey": "",
+                "listdefPath": "",
+                "data": "render"
+              }
+            }
+          }
+        ],
+        "tnxStatus": [
+          {
+            "01": [
+              {
+                "01": [
+                  "transactionDetails"
+                ]
+              },
+              {
+                "02": [
+                  "transactionDetails",
+                  "additionalInformation"
+                ]
+              },
+              {
+                "03": [
+                  "transactionDetails",
+                  "additionalInformation"
+                ]
+              },
+              {
+                "04": [
+                  "transactionDetails",
+                  "events",
+                  "additionalInformation"
+                ]
+              }
+            ]
+          },
+          {
+            "03": [
+              {
+                "01": [
+                  "transactionDetails",
+                  "events",
+                  "additionalInformation"
+                ]
+              },
+              {
+                "02": [
+                  "transactionDetails",
+                  "events",
+                  "additionalInformation"
+                ]
+              },
+              {
+                "03": [
+                  "transactionDetails",
+                  "events",
+                  "additionalInformation"
+                ]
+              },
+              {
+                "04": [
+                  "transactionDetails",
+                  "events",
+                  "additionalInformation"
+                ]
+              }
+            ]
+          },
+          {
+            "13": [
+              {
+                "01": [
+                  "transactionDetails",
+                  "events",
+                  "additionalInformation"
+                ]
+              },
+              {
+                "02": [
+                  "transactionDetails",
+                  "events",
+                  "additionalInformation"
+                ]
+              },
+              {
+                "03": [
+                  "transactionDetails",
+                  "events",
+                  "additionalInformation"
+                ]
+              },
+              {
+                "04": [
+                  "transactionDetails",
+                  "events",
+                  "additionalInformation"
+                ]
+              }
+            ]
+          },
+          {
+            "15": [
+              {
+                "04": [
+                  "transactionDetails",
+                  "events",
+                  "additionalInformation"
+                ]
+              }
+            ]
+          },
+          {
+            "MASTER": [
+              {
+                "ACKNOWLEDGED": [
+                  "transactionDetails",
+                  "events",
+                  "additionalInformation"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--
+	Misys Trade Portal Interfaces Schema
+	Copyright (c) 2000-2014 Misys (http://www.misys.com) All Rights Reserved.
+-->
+<components xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xsi:noNamespaceSchemaLocation="http://www.misys.com/portal/interfaces/xsd/interfaces.xsd">
+<!-- Do not change the standard interface files. Instead, put you own components in this file to override the standard values. -->
+<component name="GetAccountWebservice">
+	<description>Account Webservice</description>
+	<classname>com.finastra.openapi.api.AccountWebservice2</classname>
+</component>
+
+<component name="sendsms">
+		<description>Build message from event. 0: Reference Id, 1: Product code, 2: Amount, 3: Currency, 4: Tnx Type code, 5: Customer Name, 6: Bank Name, 7: Customer Ref. Id, 8: BO Ref. Id, 9: Entity, 10: Receiver name</description>
+		<classname>com.misys.portal.interfaces.components.SMSSender</classname>
+		<properties>
+			<!--<property name="message.from.address" description="Sender email address">${alert.email.from.address}</property>
+			<property name="message.from.personal" description="Sender name">${alert.email.from.personal}</property>
+			<property name="message.replyTo" description="Environment property containing Reply-to email address"></property>
+			<property name="message.to" description="Environment property containing Recipient email address">message.to</property>
+			<property name="message.cc" description="Environment property containing CC'ed address"></property>
+			<property name="message.bcc" description="Environment property containing BCC'ed address"></property>
+			<property name="message.subject" description="Environment property containing Subject">message.subject</property>
+			<property name="message.attachment" description="Environment property containing Attachment content as bytes">message.attachment</property>
+			<property name="message.filename" description="Environment property containing Attachment filename">filename</property>-->
+			<property name="mail.host" description="SMTP relay">${smtp.host}</property>
+			<property name="mail.transport.protocol" description="Protocol">smtp</property>
+		</properties>
+	</component>
+</components>

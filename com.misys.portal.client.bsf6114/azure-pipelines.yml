@@ -1,0 +1,54 @@
+# Build pipeline documentation: https://docs.ffdcdev.fusionoperate.io/docs/software_factory/build_pipelines/
+# Pipeline template (with the full list of parameters which can be customized): https://fusionfabric.visualstudio.com/FusionOperate/_git/pipeline_templates?path=%2Ftmpl%2Fcommon%2FbuildStageContent.yml
+
+resources:
+  repositories:
+  - repository: templates
+    type: git
+    name: FusionOperate/pipeline_templates
+    ref: refs/heads/master
+# Exclude all short-lived branches which will be handled through the PR branch policy build
+trigger:
+  branches:
+    include:
+    - master
+    - develop
+  paths:
+    exclude:
+    - azure-pipelines-develop.yml
+    - azure-pipelines-master.yml
+stages:
+- template: tmpl/fusionfabric/fcc/build.yml@templates
+  parameters:
+    chartTemplateName: focorechassis
+    agentMemoryLimit: 8Gi
+#    checkmarxScanTimeout: 3600000
+    helmTests: true
+    sonar: false
+    whitesource: false
+    checkmarx: false
+    aqua: true
+    keepTempDeployment: true
+
+#    whitesource: true
+#    whitesourceQualityGate: true
+#    checkmarx: true
+#    checkmarxHighThreshold: 0
+#    checkmarxQualityGate: true
+#    whitesourceQualityGate: true
+#    checkmarxHighThreshold: 0
+#    buildagentdemand: 'samibuild -equals true'
+#    writesourceExtensions: '**/*.rb'
+#    whitesourceExcludeDependenciesFromNodes: 'stylelint.*,actionview,rack,actionpack'
+    tests:
+      dockerTestImageList:
+      - imageName: $(Build.DefinitionName)-acceptance
+        dockerFile: Dockerfile-acceptance
+    #  - imageName: $(Build.DefinitionName)-performance
+    #    dockerFile: Dockerfile-performance
+    buildMavenCodeCoverageClassFilter: '-:com.trmsys.fcconcloud.openapi.*'
+    # Documentation: https://docs.ffdcdev.fusionoperate.io/docs/software_factory/pipeline_variables/#pipeline-variables
+    additionalVariableFiles:
+      __default__:
+      - pipeline_variables/global.yml
+      - pipeline_variables/build.yml

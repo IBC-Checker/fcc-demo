@@ -1,0 +1,5 @@
+ARG imagefactory_registry=p21d4020250r001.azurecr.io/
+FROM ${imagefactory_registry}base/openjdk:11-alpine
+
+#COPY target/fcconcloud-perf-tests.jar /bzt-configs/tests.jar
+#COPY src/test/resources/taurus/* /bzt-configs/

@@ -1,0 +1,2434 @@
+/**Common Css Rules**/
+ 
+/* @font-face {
+
+    font-family: "MyriadPro";
+
+    font-style: normal;
+
+    font-weight: 300;
+
+    src: url("/content/FCCUI/assets/fonts/MyriadPro-Regular.otf");
+
+    src: local("MyriadPro"), local("MyriadPro-Regular"),
+
+        url("/content/FCCUI/assets/fonts/MyriadPro-Regular.otf")
+
+            format("opentype");
+
+} */
+ 
+* {
+
+    font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
+
+}
+ 
+::-moz-selection { 
+
+    background: #6D6E71 !important;
+
+    color: white !important;
+
+}
+
+::selection { 
+
+    background: #6D6E71 !important; 
+
+    color: white !important;
+
+}
+ 
+.colmask{
+
+	margin-top: 5.5em !important;
+
+}
+ 
+.maincontent .homepage .colmask{
+
+	margin-top: 0.5em;
+
+}
+ 
+.panel1 {
+
+    background-color: #91DFDA !important;
+
+}
+ 
+.homepage a, .homepage a:hover, .homepage a:visited {
+
+    color: #91DFDA !important;
+
+    font-size: 16px;
+
+}
+ 
+#Welcome p{
+
+	font-size: 16px;
+
+}
+ 
+.homepage .portlet-section-body, .homepage #BookmarkPortlet .portlet-section-body{
+
+	font-size: 16px !important;
+
+}
+ 
+.saveButton .dijitButtonNode, .submitButton .dijitButtonNode, .saveTemplateButton .dijitButtonNode, .helpButton .dijitButtonNode {
+
+	 background-color: #91DFDA !important;
+
+	 border-radius: 5px !important /* Khaled */
+
+}
+ 
+.cancelButton .dijitButtonNode{
+
+	background-color: #91DFDA !important;
+
+	border-radius: 1.125em !important;
+
+	padding: 0 1.5em !important;
+
+	min-width: 4em !important;
+
+	line-height: 2.25em !important;
+
+	font-size: 0.875em !important;
+
+	font-weight: 500 !important;
+
+	cursor: pointer !important;
+
+	outline: 0 !important;
+
+	border: none !important;
+
+	display: inline-block !important;
+
+	text-decoration: none !important;
+
+	vertical-align: baseline !important;
+
+	text-align: center !important;
+
+	width: auto;
+
+	background-image: none !important;
+
+}
+ 
+.dijitButton .dijitButtonNode{
+
+	background-color: #FFF !important;
+
+}
+ 
+.logo {
+
+	width: 100px !important;
+
+	content:url("images/logo.png") !important;	
+
+	background:url("images/logo.png") !important; 
+
+	background-size: 100px 50px !important;
+
+	height: 50px !important;
+
+	/*margin-top: 100px;
+
+	margin-left: 150px;
+
+	 */
+
+}
+ 
+/* .FCC .languagesImage {
+
+	display: inline-block;
+
+    background: url("images/global_gold.png") no-repeat;
+
+    overflow: hidden;
+
+    text-indent: -9999px;
+
+    text-align: left;
+
+    height: 20px;
+
+	opacity: 1;
+
+    filter: brightness(0);
+
+} */
+ 
+.panel1,
+
+#TradeCalendarPortlet .dijitCalendarSelectedYear,
+
+#TradeCalendarPortlet .dijitCalendarSelectedDate,
+
+#default .dijitCalendarSelectedYear,
+
+#default .dijitCalendarSelectedDate,
+
+#MenuBuilder .dijitCalendarContainer th,
+
+#TradeCalendarPortlet .dijitCalendarContainer th,
+
+.dijitDialogTitleBar,
+
+.tree-product-menu-container .dijitTreeRow ,
+
+.attachments thead th {
+
+	background: #91DFDA !important;
+
+	border-radius: 2px;
+
+}
+ 
+.header .panel1,
+
+.dijitDialogTitleBar,
+
+.base .dijitMenuBar,
+
+.dijitMenuBar .dijitMenuItemLabel,
+
+.bookmarkMenu .dijitDropDownButton .dijitButtonNode {
+
+	/*background : #082a3e;*/
+
+	background : #91DFDA !important;
+
+}
+ 
+.dojoxGridHeader th.dojoxGridCell,
+
+.valueaddedservice .dojoxGridCell,
+
+.entityReferencesTableCellHeader,
+
+.userAccountsTableCellHeader,
+
+.userAccountsTableCellSelectAll,
+
+.valueaddedservice thead th,
+
+.userEntityTableCellHeader,
+
+.factoringTableCellHeader,
+
+.multiSubmissionListHeader {
+
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0)!important;
+
+	/* color : #91DFDA;  */
+
+	color : #2B2B2B !important;
+
+}
+ 
+.dojoxGrid {
+
+    background-color: #D9D9D9 !important;
+
+}
+ 
+.dojoxGridHeader th.dojoxGridCell {
+
+	background: none repeat scroll 0 0 #91DFDA !important;
+
+	border: 1px solid #D9D9D9 !important;
+
+}
+ 
+ 
+.dojoxGridRow .dojoxGridCell {
+
+    background-color: #F8F8F8 !important;
+
+	border: 0.5px solid #F8F8F8 !important;
+
+    padding-left: 0;
+
+}
+ 
+.dojoxGridRowOdd .dojoxGridCell {
+
+    background-color: #91DFDA !important;
+
+    padding-left: 0;
+
+}
+ 
+.dojoxGridRowOver .dojoxGridCell {
+
+    background-color: #D9D9D9 !important;
+
+}
+ 
+ 
+/*
+
+	------------- document.css
+
+*/
+ 
+.homepage a:link {
+
+	color: #6D6E71 !important;
+
+}
+ 
+.homepage a:visited {
+
+	color: #6D6E71 !important;
+
+}
+ 
+/*
+
+	------------- dijit_overrides.css
+
+*/
+ 
+.tree-product-menu-container .dijitTreeContainer .dijitTreeNode .dijitTreeContainer .dijitTreeNode .dijitTreeContainer .dijitTreeNode .dijitTreeRow {
+
+	background: none repeat scroll 0 0 transparent !important;
+
+	border-left : 0px none !important;
+
+	border-bottom : 1px solid #ffffff!important;
+
+    color: #121212 !important;
+
+	font-weight:normal;
+
+	margin:0px;
+
+    margin-left: 6px;
+
+    margin-right: 6px;
+
+	border-radius:0px;
+
+	border:0px none;
+
+}
+ 
+.tree-product-menu-container .dijitTreeContainer .dijitTreeNode .dijitTreeContainer .dijitTreeNode .dijitTreeContainer .dijitTreeNode .dijitTreeRow.dijitTreeRowSelected {
+
+	background: none repeat scroll 0 0 transparent !important;
+
+	border-left : 0px none !important;
+
+	border-bottom : 5px solid #91DFDA !important;
+
+    color: #121212 !important;
+
+	font-weight:normal;
+
+	margin:0px;
+
+    margin-left: 6px;
+
+    margin-right: 6px;
+
+	border-radius:0px;
+
+	border:0px none;
+
+}
+ 
+.tree-product-menu-container .dijitTreeContainer .dijitTreeNode .dijitTreeContainer .dijitTreeNode .dijitTreeContainer .dijitTreeNode .dijitTreeRow.dijitTreeRowHover,
+
+.tree-product-menu-container .dijitTreeContainer .dijitTreeNode .dijitTreeContainer .dijitTreeNode .dijitTreeContainer .dijitTreeNode .dijitTreeRow.dijitTreeRowSelected.dijitTreeRowHover {
+
+	background: none repeat scroll 0 0 #ffffff !important;
+
+	border-left : 0px none !important;
+
+	border-bottom : none !important;
+
+    color: #121212 !important;
+
+	font-weight:normal;
+
+	margin:0px;
+
+    margin-left: 6px;
+
+    margin-right: 6px;
+
+	border-radius:3px !important;
+
+	border:1px none;
+
+}
+ 
+/*
+
+	------------- Button.css
+
+*/
+ 
+.dijitButton:not(.noborder) .dijitButtonNode,
+
+.dijitComboButton:not(.noborder) .dijitButtonNode,
+
+.dijitToggleButton:not(.noborder) .dijitButtonNode {
+
+	border-radius: 4px;
+
+    border: 1px solid transparent;
+
+    font-weight: normal;
+
+    line-height: 1.42857;
+
+    padding: 5px 10px;
+
+    text-align: center;
+
+    white-space: nowrap;
+
+    color: #fff !important;
+
+    background: #91DFDA!important;
+
+    border-color: transparent!important;
+
+    min-width: 65px;
+
+
+    display: inline-block;
+
+    font-size: 12px;
+
+    vertical-align: middle;
+
+    touch-action: manipulation;
+
+    cursor: pointer;
+
+}
+ 
+.dijitDropDownButton:not(.noborder):not(.inlineBlock) .dijitButtonNode {
+
+    background: #FFF!important;
+
+}
+ 
+.homepageButtons:not(.noborder) .dijitButtonNode {
+
+    min-width: 0px;
+
+    padding: 5px 10px;
+
+}
+ 
+.dijitButtonHover:not(.noborder) .dijitButtonNode,
+
+.dijitDropDownButtonHover:not(.noborder) .dijitButtonNode {
+
+	opacity: 1;
+
+}
+ 
+.dijitButtonDisabled,
+
+.dijitDropDownButtonDisabled,
+
+.dijitComboButtonDisabled,
+
+.dijitToggleButtonDisabled {
+
+	opacity: 0.5;
+
+}
+ 
+/*
+
+	------------- portlets.css
+
+*/
+ 
+#default #GTPRootPortlet .portlet-section-header h1 {
+
+	font-weight: bold !important;
+
+	color: #91DFDA !important;
+
+}
+ 
+.portlet-section-header .portlet-title {
+
+    color: #91DFDA !important;
+
+   /* border-bottom: 2px solid #082a3e; */
+
+   /* border-bottom: 1px solid #115a86;*/
+
+   border-bottom: 4px solid #91DFDA !important;
+
+}
+ 
+.footerLogo{
+
+	display: none;
+
+}
+
+.footer-bottom{
+
+	margin-top: 15px;
+
+}
+ 
+.col2{
+
+	width: 280px !important;
+
+}
+ 
+.col1pad{
+
+	margin-left: 310px !important;
+
+}
+ 
+.portlet-section-body{
+
+	font-size: 14px;
+
+}
+ 
+/*
+
+---------Added by Mahmoud start
+ 
+*/
+ 
+.portalMenu {
+
+    background-color: #F8F8F8 !important;
+
+   /* border: 1px solid #4b6a92;*/
+
+    border: 1px solid #B7E0FF !important;
+
+    border-bottom: 0;
+
+}
+ 
+.dijitMenuSeparatorTop {
+
+    border-bottom: 1px solid #B7E0FF !important;
+
+}
+ 
+.portalMenuItem a {
+
+    color: #6D6E71 !important;
+
+    font-weight: normal;
+
+}
+ 
+ 
+.tree-product-menu-container .dijitTreeRow {
+
+    border-bottom: 1px solid #ffffff !important;
+
+    border-radius:3px !important;
+
+}
+ 
+.dojoxGridPaginator {
+
+    background: #ffffff!important; /* this one */
+
+}
+ 
+.dijitMenuActive .dijitMenuItemHover, 
+
+.dijitMenuActive .dijitMenuItemSelected  {
+
+	/*background: #91DFDA; */
+
+	background: #91DFDA !important;
+
+}
+ 
+ 
+.dijitMenuActive .dijitMenuItemHover a
+
+{
+
+	color: #fff !important;
+
+}
+ 
+ 
+.indented-header h3, #event-summary .attachments-container .toplevel-header h2 {
+
+    background-image: none;
+
+    background-color: #ffffff !important;
+
+    color: #91DFDA !important;
+
+    border-radius:1px !important;
+
+    border-bottom: 1px solid #91DFDA;
+
+}
+ 
+.dojoxGrid {
+
+    background-color: #ffffff !important;
+
+}
+ 
+.dijitTextBox {
+
+    color: #898989 !important;
+
+    border-radius: 3px;
+
+    border: 1px solid #D8D8D8 !important;
+
+}
+ 
+#MenuBuilder  .dijitCalendarDayLabelTemplate,
+
+#TradeCalendarPortlet .dijitCalendarDayLabelTemplate {
+
+    background: #91DFDA!important;
+
+    color: #ffffff !important;
+
+ 
+}
+ 
+.toplevel-header  h2 
+
+{
+
+	background:  #91DFDA !important;
+
+	border: 1px solid #6D6E71 !important;
+
+	color: #ffffff !important;
+
+	border-radius: 3px;
+
+	font-weight:normal;
+
+}
+ 
+.base .tree-product-menu-container .dijitTreeContainer .dijitTreeNode .dijitTreeContainer .dijitTreeNode .dijitTreeContainer .dijitTreeNode .dijitTreeRow.dijitTreeRowSelected {
+
+    /* background: url("../../../../../images/components/leftmenu-selected.png") no-repeat scroll 0px 0px #07274C; */
+
+    border-left: 5px solid #6D6E71 !important;
+
+    background-color: white !important;
+
+}
+ 
+.base .tree-product-menu-container .dijitTreeContainer .dijitTreeNode .dijitTreeContainer .dijitTreeNode .dijitTreeContainer{
+
+	background: none repeat scroll 0 0 #91DFDA !important;
+
+}
+ 
+.dashboard2Theme .tree-product-menu-container .dijitTreeContainer .dijitTreeNode .dijitTreeContainer .dijitTreeNode .dijitTreeContainer .dijitTreeNode .dijitTreeRow.dijitTreeRowSelected.dijitTreeRowHover {
+
+    color: #6D6E71 !important;
+
+}
+ 
+.dashboard2Theme .tree-product-menu-container .dijitTreeContainer .dijitTreeNode .dijitTreeContainer .dijitTreeNode .dijitTreeContainer .dijitTreeNode .dijitTreeRow.dijitTreeRowHover {
+
+     color: #6D6E71 !important;
+
+}
+ 
+/**------------------------------------Book Marks -------------------**/
+ 
+.base .bookmarkMenu .dijitDropDownButtonActive .dijitButtonNode{
+
+    background-color: #91DFDA !important;
+
+}
+ 
+.base .bookmarkMenu .dijitDropDownButton .dijitButtonNode{
+
+    background-color: #91DFDA !important;
+
+}
+ 
+/** ------------------------------------------- Dialogs -------------------------------- **/
+ 
+.base .dijitDialogTitleBar {
+
+	background: #91DFDA !important;
+
+}
+ 
+.base .dijitDialogTitle{
+
+	font-size: 20px;
+
+}
+ 
+.base .dijitDialog {
+
+    font-size: 1em;
+
+}
+ 
+/** ------------------------------------------- MenuBar ----------------------------------- **/
+ 
+.base .dijitMenuBar {
+
+	background: #91DFDA !important;
+
+}
+ 
+.base .dijitMenuBar .dijitMenuItemLabel {
+
+	background: #91DFDA !important;
+
+}
+ 
+.base .dijitMenuSeparatorTop {
+
+    border-bottom: 1px solid #91DFDA !important;
+
+}
+ 
+.base .portalMenu {
+
+	border: 1px solid #91DFDA !important;
+
+}
+ 
+/** ---------------------------------------- Calendar Rules -------------------------------- **/
+ 
+#TradeCalendarPortlet .dijitCalendarSelectedYear,
+
+#TradeCalendarPortlet .dijitCalendarSelectedDate,
+
+#default .dijitCalendarSelectedYear,
+
+#default .dijitCalendarSelectedDate {
+
+	background-color: #6D6E71 !important;
+
+}
+ 
+#MenuBuilder .dijitCalendarContainer th,
+
+#TradeCalendarPortlet .dijitCalendarContainer th {
+
+	background: #6D6E71 !important;
+
+}
+ 
+/** ------------------------------------------- DataGrids ----------------------------------- **/
+ 
+.base .dojoxGridHeader th.dojoxGridCell  {
+
+    background: none repeat scroll 0 0 #6D6E71 !important;
+
+    color: #FFF !important
+
+}
+ 
+.base .tree-product-menu-container .dijitTreeRow {
+
+	/*background:url("../../../../../images/components/leftmenu-middle-sansarrow.png") no-repeat;*/
+
+	background-image : none;
+
+	background-color : #FFF !important;
+
+	color: #2B2B2B !important;
+
+	font-size: 16px;
+
+}
+ 
+.base .tree-product-menu-container .dijitTreeRow:hover {
+
+	background-color : #91DFDA !important;
+
+	color: white !important;
+
+}
+ 
+.toplevel-header h2 {
+
+	background: #6D6E71 !important;
+
+	height: 25px !important;
+
+	font-size: 16px;
+
+	font-weight: bold !important;
+
+}
+ 
+.beneficiaryFailedRecordsTable th, .beneficiaryFailedRecordsTable td  {
+
+	background: none repeat scroll 0 0 #6D6E71 !important;
+
+}
+ 
+.paracontent {
+
+    padding-top: 0.5em !important;
+
+    margin-top: 1em !important;
+
+    padding-left: 1.5em !important;
+
+    font-size: small !important;
+
+}
+ 
+.footer-body a {
+
+    color: #666 !important;
+
+}
+ 
+/* Modern theme common.css */
+ 
+#layout {
+
+	background-color : #FFFFFF !important;
+
+	background : none;
+
+}
+ 
+BODY.FCC {
+
+	color: #6D6E71 !important;
+
+	margin: 10px;
+
+}
+ 
+.footer {
+
+	/*background : #082a3e; */
+
+	background : #ffffff !important;
+
+	border-radius: 2px;
+
+}
+ 
+.footerDiv2 {
+
+	font-size: 11px;
+
+	text-align: left;
+
+}
+ 
+.build-version {
+
+	float: right;
+
+}
+ 
+.modern #layout {
+
+	background-color: #FFFFFF;
+
+	background: none;
+
+}
+ 
+BODY.modern {
+
+	color: #616161;
+
+}
+ 
+.modern .footer {
+
+	background: none;
+
+}
+ 
+.modern .panel1 {
+
+	background-color: #91DFDA;
+
+}
+ 
+.base .dijitMenuBar {
+
+	background: transparent;
+
+}
+ 
+.modern .dijitMenuBar .dijitMenuItemLabel {
+
+	background: transparent;
+
+}
+ 
+.modern .bookmarkMenu .dijitDropDownButton .dijitButtonNode {
+
+	background-color: transparent;
+
+}
+ 
+.modern .dojoxGrid {
+
+	border: none !important;
+
+}
+ 
+.modern .dojoxGridMasterHeader {
+
+	background: none !important;
+
+	border: none !important;
+
+}
+ 
+.modern .dojoxGridHeader th.dojoxGridCell {
+
+	background-color: #91DFDA;
+
+	/* vertical-align: bottom; */
+
+	border: none;
+
+	font-weight: 700;
+
+	color: #616161;
+
+	font-size: 1em;
+
+	border-right: 1px solid #E6E6E6;
+
+	border-top: none !important;
+
+	border-bottom: .065em solid #D9D9D9 !important;
+
+}
+ 
+.modern .dojoxGridHeader th:first-child {
+
+	border-left: 1px solid #E6E6E6;
+
+}
+ 
+.modern .dojoxGridRowTable tr {
+
+    background: none;
+
+}
+ 
+.modern .dojoxGridRow tr>td.dojoxGridCell {
+
+	background-color: #fff;
+
+	border: 0 solid #D9D9D9;
+
+	border-right: 1px solid #E6E6E6;
+
+	border-top: 0px solid #D9D9D9;
+
+	border-bottom: 1px solid #D9D9D9 !important;
+ 
+}
+ 
+.modern .dojoxGridRow tr>td:first-child {
+
+	border-left: 1px solid #E6E6E6;
+
+}
+ 
+.modern .dojoxGridRow.dojoxGridRowOdd tr>td.dojoxGridCell {
+
+	background-color: #91DFDA;
+
+	border: 0 solid #D9D9D9;
+
+	border-right: 1px solid #E6E6E6;
+
+	border-top: 0px solid #D9D9D9;
+
+	border-bottom: 1px solid #D9D9D9 !important;
+ 
+}
+ 
+.modern .dojoxGridRow.dojoxGridRowOdd tr>td:first-child {
+
+	border-left: 1px solid #E6E6E6;
+
+}
+ 
+.modern .dojoxGridRow tr:hover>td.dojoxGridCell, .modern .dojoxGridRow tr:hover>td.dojoxGridCell>a {
+
+	background-color: #91DFDA;
+
+	font-weight: 600;
+
+}
+ 
+.modern .dojoxGrid .dojoxGridMasterView .dojoxGridView, .modern .dojoxGrid .dojoxGridMasterHeader .dojoxGridHeader {
+
+	left: 0px !important;
+
+}
+ 
+.modern .dojoxGridHeader:first-child .dojoxGridRowTable {
+
+    border-left-width: thin;
+
+    border-left: 1px solid white;
+
+}
+ 
+.modern .dojoxGridCell {
+
+    padding-left: 5px !important;
+
+}
+ 
+.modern .dojoxGridHeader:first-child {
+
+    margin-left: 0px;
+
+}
+ 
+.modern .toplevel-header h2 {
+
+	background: #91DFDA;
+
+	color: #616161;
+
+	font-size: 16px;
+
+	line-height: 1.3em;
+
+	color: #6D6E71;
+
+	/*padding: 10px 6px 6px*/;
+
+}
+
+.modern .indented-header h3 {
+
+	color: #6D6E71;
+
+}
+
+/* .portlet-section-body {
+
+	background: #FBFBFE;	
+
+} */
+
+.dijitButton .dijitButtonNode, .saveButton .dijitButtonNode, .submitButton .dijitButtonNode, .saveTemplateButton .dijitButtonNode, .cancelButton .dijitButtonNode, .helpButton .dijitButtonNode {
+
+    color: #ffffff !important;
+
+    /*border-radius: 1.125em !important;*/
+
+    border-radius: 5px !important; /*khaled*/
+
+    padding: 0 1.5em !important;
+
+    min-width: 4em !important;
+
+    line-height: 2.25em !important;
+
+    font-size: 0.875em !important;
+
+    font-weight: 500 !important;
+
+    cursor: pointer !important;
+
+    outline: 0 !important;
+
+    border: none !important;
+
+    display: inline-block !important;
+
+    text-decoration: none !important;
+
+    vertical-align: baseline !important;
+
+    text-align: center !important;
+
+    background-color: #002A4B !important;
+
+    width: auto;
+
+    background-image: none !important;
+
+}
+ 
+.imgButton.dijitButton .dijitButtonNode{
+
+	border: none !important;
+
+    background: transparent !important;
+
+    border-radius: 0 !important;
+
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.15) !important;
+
+    padding: 2px 4px 4px 4px !important;
+
+    transition-property: background-color !important;
+
+    margin: 0 !important;
+
+    line-height: normal !important;
+
+    vertical-align: middle !important;
+
+    text-align: center !important;
+
+    white-space: nowrap !important;
+
+}
+ 
+.indented-header h3, #event-summary .attachments-container .toplevel-header h2 {
+
+	background-color: #F8F8F8;
+
+	color: #616161;
+
+	padding: 10px 6px;
+
+}
+ 
+.portlet-section-header .portlet-title {
+
+	color: #616161;
+
+	border-bottom: 1px solid #D7D7D7;
+
+	font-size: 20px;
+
+}
+ 
+.modern .dijitTabContainerTop-tabs {
+
+	border-bottom: 1px solid #E6E6E6;
+
+}
+ 
+.modern .dijitTabContainerTop-tabs .dijitTab {
+
+	margin-right: 0px;
+
+}
+ 
+.modern .dijitTabContainerTop-tabs .dijitTabContent {
+
+	background-image: none;
+
+	background-color: #F8F8F8;
+
+	color: #616161;
+
+	border-color: #E6E6E6;
+
+	background-color: #F8F8F8;
+
+}
+ 
+.modern .dijitTabContainerTop-tabs .dijitTabChecked .dijitTabContent {
+
+	background-color: #6D6E71;
+
+	color: #fff;
+
+	padding-top: 3px;
+
+}
+ 
+.modern .attachments thead th {
+
+	background: #91DFDA;
+
+}
+ 
+.modern .valueaddedservice .dojoxGridCell {
+
+	background: none repeat scroll 0 0 #91DFDA !important;
+
+}
+ 
+.modern .entityReferencesTableCellHeader {
+
+	background: none repeat scroll 0 0 #91DFDA;
+
+}
+ 
+.modern .userAccountsTableCellHeader {
+
+	background: none repeat scroll 0 0 #91DFDA;
+
+}
+ 
+.modern .userAccountsTableCellSelectAll {
+
+	background: none repeat scroll 0 0 #91DFDA;
+
+}
+ 
+.modern .valueaddedservice thead th {
+
+	background: none repeat scroll 0 0 #91DFDA;
+
+}
+ 
+.modern .userEntityTableCellHeader {
+
+	background: none repeat scroll 0 0 #91DFDA;
+
+}
+ 
+.modern .factoringTableCellHeader {
+
+	background: none repeat scroll 0 0 #91DFDA;
+
+}
+ 
+.modern .multiSubmissionListHeader {
+
+	background: none repeat scroll 0 0 #91DFDA;
+
+}
+ 
+.modern .bookmarkMenu .dijitDropDownButtonActive .dijitButtonNode {
+
+	background-color: #91DFDA;
+
+}
+ 
+.modern .dijitDialogTitleBar {
+
+	background: #91DFDA;
+
+}
+ 
+.modern .portalMenu {
+
+	border: 1px solid #91DFDA;
+
+}
+ 
+.modern #layout, .modern .footer {
+
+	background: none;
+
+}
+ 
+/* Left Menu */
+
+#MenuBuilder {
+
+	margin-top: 15px;
+
+}
+ 
+@media screen and (min-width: 768px) and (max-width: 820px) {
+
+	#MenuBuilder {
+
+	 margin-top: 75px !important;
+
+}
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1180px) {
+
+	#MenuBuilder {
+
+	 margin-top: 26px !important;
+
+}
+
+}
+
+#MenuBuilder .dijitTree.dijitTreeContainer {
+
+	border: 1px solid #E6E6E6;
+
+	box-shadow: 1px 1px 1px 0px #E6E6E6, -1px -1px 1px 0px #E6E6E6;
+
+	border-radius: 2px;
+
+	padding: 4px;
+
+}
+ 
+#MenuBuilder .dijitTree.dijitTreeContainer:hover {
+
+	border: 1px solid #00477C;
+
+	box-shadow: 1px 1px 1px 0px #00477C, -1px -1px 1px 0px #00477C;
+
+}
+ 
+.modern .tree-product-menu-container .dijitTreeRow {
+
+	background-color: #fff;
+
+	color: #616161;
+
+	border-bottom: 0px solid #f2f7f8;
+
+	font-size: 100%;
+
+	font-weight: 600;
+
+}
+ 
+.modern .tree-product-menu-container .dijitTreeNode .dijitTreeRow {
+
+	border-left: 5px solid transparent;
+
+	padding-right: 5px !important;
+
+}
+ 
+.modern .tree-product-menu-container .dijitTreeNode .dijitTreeRow.dijitTreeRowHover
+
+	{
+
+	background-color: #91DFDA;
+
+	border-top: 0px solid transparent;
+
+	border-bottom: 0px solid transparent;
+
+	border-left: 5px solid #6D6E71;
+
+}
+ 
+.modern .tree-product-menu-container .dijitTreeNode .dijitTreeRow.dijitTreeRowSelected
+
+	{
+
+	border-top: 0px solid transparent;
+
+	border-bottom: 0px solid transparent;
+
+	border-left: 5px solid #6D6E71;
+
+	color: #6D6E71;
+
+}
+ 
+.modern .tree-product-menu-container .dijitTreeContainer .dijitTreeNode .dijitTreeContainer .dijitTreeNode .dijitTreeContainer
+
+	{
+
+	background: none repeat scroll 0 0 #fff;
+
+}
+ 
+.modern .tree-product-menu-container .dijitTreeContainer .dijitTreeNode .dijitTreeContainer .dijitTreeNode .dijitTreeContainer .dijitTreeNode .dijitTreeRow
+
+	{
+
+	background: none repeat scroll 0 0 #fff;
+
+	color: #616161;
+
+	margin-left: 20px;
+
+	margin-right: 10px;
+
+	padding-left: 10px !important;
+
+	border-radius: 0px;
+
+}
+ 
+.modern .tree-product-menu-container .dijitTreeContainer .dijitTreeNode .dijitTreeContainer .dijitTreeNode .dijitTreeContainer .dijitTreeNode .dijitTreeRow.dijitTreeRowSelected
+
+	{
+
+	background-color: #F8F8F8;
+
+	border-left: 0px !important;
+
+	color: #6D6E71;
+
+	margin-left: 20px;
+
+	margin-right: 10px;
+
+	padding-left: 10px !important;
+
+	border-radius: 0px;
+
+	font-weight: 600;
+
+}
+ 
+.modern .tree-product-menu-container .dijitTreeContainer .dijitTreeNode .dijitTreeContainer .dijitTreeNode .dijitTreeContainer .dijitTreeNode .dijitTreeRow.dijitTreeRowSelected.dijitTreeRowHover
+
+	{
+
+	background-color: #91DFDA;
+
+	color: #6D6E71;
+
+	margin-left: 20px;
+
+	margin-right: 10px;
+
+	padding-left: 10px !important;
+
+	border-radius: 0px;
+
+	font-weight: 600;
+
+}
+ 
+.modern .tree-product-menu-container .dijitTreeContainer .dijitTreeNode .dijitTreeContainer .dijitTreeNode .dijitTreeContainer .dijitTreeNode .dijitTreeRow.dijitTreeRowHover
+
+	{
+
+	background-color: #91DFDA;
+
+	color: #616161;
+
+	margin-left: 20px;
+
+	margin-right: 10px;
+
+	padding-left: 10px !important;
+
+	border-radius: 0px;
+
+}
+ 
+.modern .tree-product-menu-container .dijitTreeExpando.dijitTreeExpandoOpened
+
+	{
+
+	background: url("images/leftmenu-arrow-up.png") no-repeat 0px -3px;
+
+}
+ 
+.modern .tree-product-menu-container .dijitTreeExpando.dijitTreeExpandoClosed
+
+	{
+
+	background: url("images/leftmenu-arrow-down.png") no-repeat 0px 0px;
+
+}
+ 
+@media print {
+
+	body {
+
+		zoom: 50%;
+
+	}
+
+}
+ 
+.NoAsterik .required-field-symbol {
+
+	display: none !important;
+
+}
+ 
+.attachments td {
+
+	word-break: break-all;
+
+	white-space: normal;
+
+}
+
+/* MPS-56007  - The links have to be underlined*/
+
+.modern table.dojoxGridRowTable a:link {
+
+	color: #2B2B2B !important;
+
+	font-weight: normal;
+
+}
+ 
+#searchInput {
+
+	background-image: url(images/search.png);
+
+	background-position: 10px 8px;
+
+	background-repeat: no-repeat;
+
+	font-size: 12px;
+
+	padding: 8px 20px 8px 40px;
+
+	border: 2px solid #91DFDA;
+
+	width: 40em;
+
+	font-weight: 300;
+
+	margin: 16px 5px 16px 0px;
+
+}
+ 
+#searchInput:focus {
+
+	outline: 0px;
+
+}
+ 
+#searchInput::placeholder {
+
+	color: #898989;
+
+}
+ 
+.menulist {
+
+	float: left;
+
+	overflow: auto;
+
+	z-index: 10;
+
+	position: absolute;
+
+	text-align: left;
+
+	background-color: #91DFDA;
+
+	margin-top: -16px;
+
+	color: white;
+
+	font-size: 0.875em;
+
+	font-weight: bold;
+
+	margin-left: 35px;
+
+}
+ 
+#menuUL {
+
+	padding-right: 6px;
+
+	padding-left: 6px;
+
+	max-height: 210px;
+
+}
+ 
+#menuUL a:link {
+
+	color: white;
+
+}
+ 
+#menuUL a:hover {
+
+	font-weight: bold;
+
+}
+ 
+#menuUL a:visited {
+
+	color: white;
+
+}
+ 
+#transIDdiv {
+
+	float: left;
+
+	overflow: auto;
+
+	z-index: 10;
+
+	position: absolute;
+
+	text-align: left;
+
+	background-color: #91DFDA;
+
+	margin-top: -20px;
+
+	color: white;
+
+	width: 18em;
+
+	font-size: 0.875em;
+
+	margin-left: 35px;
+
+}
+ 
+#transIDinnerdiv {
+
+	padding-left: 6px;
+
+	padding-right: 6px;
+
+	max-height: 175px;
+
+}
+ 
+#transIDinnerdiv a {
+
+	font-weight: bold;
+
+}
+ 
+#transIDinnerdiv a:hover {
+
+	cursor: pointer;
+
+	font-weight: bold;
+
+	color: #fff;
+
+}
+ 
+#actionUL {
+
+	float: left;
+
+	overflow: auto;
+
+	z-index: 10;
+
+	position: absolute;
+
+	text-align: left;
+
+	background-color: #91DFDA;
+
+	margin-top: -20px;
+
+	color: white;
+
+	display: none;
+
+	margin-left: 35px;
+
+}
+ 
+#actionUL ul {
+
+	padding-right: 6px;
+
+	padding-left: 6px;
+
+	font-weight: bold;
+
+}
+ 
+#actionUL li {
+
+	font-size: 12.4px;
+
+}
+ 
+#actionULTrade {
+
+	float: left;
+
+	overflow: auto;
+
+	z-index: 10;
+
+	position: absolute;
+
+	text-align: left;
+
+	background-color: #91DFDA;
+
+	margin-top: -20px;
+
+	color: white;
+
+	display: none;
+
+	margin-left: 35px;
+
+}
+ 
+#actionULTrade ul {
+
+	padding-right: 6px;
+
+	padding-left: 6px;
+
+	font-weight: bold;
+
+}
+ 
+#actionULTrade li {
+
+	font-size: 12.4px;
+
+}
+ 
+/* MPS-56056 - Start - Accessibility - Keyboard focus has a low visibility */
+
+.modern a:focus, .modern h2:focus, .modern h1:focus, .modern td:focus,
+
+	.modern div .dijitTextBoxFocused, .modern  .languagesImage:focus,
+
+	.dijitButtonFocused .dijitButtonText, span.dojoxGridInactiveSwitch:focus,
+
+	.dijitDownArrowButton:focus, .dijitTreeLabelFocused, .modern div.collapsingImgSpan:focus
+
+	{
+
+	outline-color: #6D6E71;
+
+	outline-width: 0px;
+
+	outline-style: solid;
+
+}
+ 
+.modern .dojoxGridCellFocus {
+
+	border: 1px solid #6D6E71 !important;
+
+}
+
+/* End - Accessibility - Keyboard focus has a low visibility */
+
+/** MPS-56519 **/
+
+.modern .seeAllBtn {
+
+	top: 5px;
+
+	position: relative;
+
+	margin: 0px;
+
+}
+ 
+.modern #_group_label, .modern #td-fx-section .label {
+
+	/*  width:170px;  */
+
+}
+ 
+#column-dialog-template .dijitDialogPaneContent,
+
+	#parameter-dialog-template .dijitDialogPaneContent,
+
+	#aggregate-dialog-template .dijitDialogPaneContent {
+
+	height: 170px !important;
+
+	overflow-y: scroll;
+
+}
+ 
+#parameter-dialog-template .dijitDialogPaneContent .dijitDialogPaneActionBar,
+
+	#aggregate-dialog-template .dijitDialogPaneContent .dijitDialogPaneActionBar
+
+	{
+
+	position: sticky;
+
+	top: 225px;
+
+}
+ 
+#column-dialog-template .dijitDialogPaneContent .dijitDialogPaneActionBar {
+
+	top: 225px;
+
+}
+ 
+#layout {
+
+	height: 100%;
+
+}
+ 
+#footerright {
+
+	display: none;
+
+}
+ 
+#layoutRootDiv {
+
+	height: 100%;
+
+}
+ 
+#layoutRetDiv {
+
+	height: 100%;
+
+}
+ 
+.modern #reporting_popup #standby-narrative label.big-textarea-wrapper-label
+
+	{
+
+	vertical-align: top;
+
+}
+ 
+.modern #reporting_popup #standby-narrative .content.textareacontent.textareawordwrap
+
+	{
+
+	display: inline;
+
+}
+ 
+.modern #reporting_popup #letterofcredit-narrative label.big-textarea-wrapper-label
+
+	{
+
+	vertical-align: top;
+
+}
+ 
+.modern #reporting_popup #letterofcredit-narrative .content.textareacontent.textareawordwrap
+
+	{
+
+	display: inline;
+
+}
+ 
+.modern #reporting_popup #chkBoxAlignPopup .content, .modern #reporting_popup #lead-bank-check-box .content
+
+	{
+
+	margin-left: 0% !important;
+
+}
+ 
+.modern #view #irrevocable .content {
+
+	position: relative;
+
+	top: 5px;
+
+	right: 40px;
+
+}
+ 
+.modern #view #transferable .content, .modern #view #nontransferable .content
+
+	{
+
+	position: relative;
+
+	top: 5px;
+
+	right: 80px;
+
+}
+ 
+.modern #view #standby .content {
+
+	position: relative;
+
+	top: 5px;
+
+	right: 100px;
+
+}
+ 
+.modern #view #revolving .content {
+
+	position: relative;
+
+	top: 5px;
+
+	right: 110px;
+
+}
+ 
+#default #GTPRootPortlet .portlet-section-header h1 {
+
+	color: #616161;
+
+	border-bottom: 2px solid #616161;
+
+}
+ 
+ 
+#helpDesk {
+
+	color: #6D6E71;
+
+}
+ 
+.modern .dijitButton.homepageButtons .dijitButtonNode {
+
+	border: none;
+
+	padding: 6px 6px 6px 6px;
+
+	background-image: none;
+
+	background-position: center top;
+
+	background-repeat: repeat-x;
+
+	background-color: transparent;
+
+	-moz-border-radius: 20px;
+
+	border-radius: 20px;
+
+	-webkit-box-shadow: none;
+
+	-moz-box-shadow: none;
+
+	box-shadow: none;
+
+	font-size: 1.3em;
+
+	color: #002A4B;
+
+	font-weight: 600;
+
+}
+ 
+.modern .dijitButton.homepageButtons.dijitButtonHover.dijitHover .dijitButtonNode
+
+	{
+
+	background-color: rgba(137, 137, 137, .2);
+
+}
+ 
+.homepage a, .homepage a:hover, .homepage a:visited {
+
+	color: #002A4B !important;
+
+}
+ 
+.homepage td>a, .homepage td>a:visited {
+
+	color: #00477C !important;
+
+}
+ 
+.homepage td>a:hover {
+
+	color: #616161 !important;
+
+}
+ 
+.userHeaderContent {
+
+	margin-right: 0em;
+
+}
+ 
+#toc {
+
+	background-color: #6D6E71;
+
+	margin-bottom: 4px;
+
+	opacity: 1 !important;
+
+	color: #fff !important;
+
+}
+ 
+#toc > p > a {
+ 
+	color: #fff !important;
+
+}
+ 
+#toccontent ul {
+
+	padding-left: 0px;
+
+}
+ 
+#toccontent li {
+
+	margin-bottom: 4px;
+
+}
+ 
+.modern .dojoxFloatingPaneTitle {
+
+	background-color: #cecece;
+
+	background-image: none;
+
+	color: #616161;
+
+	font-weight: bold;
+
+}
+ 
+.dojoxGridInactiveSwitch, .dojoxGridInactived {
+
+    color: #616161;
+
+}
+ 
+.modern .tasksBox .dijitButton .dijitButtonNode {
+
+	border: 1px solid #6D6E71;
+
+	background-color: #6D6E71;
+
+	border-radius: 5px !important; /*khaled*/
+
+	color: #fff;
+
+	padding: 4px 15px 6px 15px;
+
+	background-image: none;
+
+	-moz-border-radius: 20px;
+
+	border-radius: 20px;
+
+	-webkit-box-shadow: none;
+
+	-moz-box-shadow: none;
+
+	box-shadow: none;
+
+}
+ 
+/* Homepage calendar css Start */
+
+#TradeCalendarPortlet .dijitCalendarMonthLabel, #MenuBuilder .dijitCalendarMonthLabel {
+
+    color: #616161;
+
+}
+ 
+#MenuBuilder .dijitCalendar, #TradeCalendarPortlet .dijitCalendar {
+
+    border: 1px solid #D9D9D9;
+
+}
+ 
+.modern #TradeCalendarPortlet .dijitCalendarPreviousMonth .dijitCalendarDateLabel, .modern #TradeCalendarPortlet .dijitCalendarNextMonth .dijitCalendarDateLabel,
+
+.modern #MenuBuilder .dijitCalendarPreviousMonth .dijitCalendarDateLabel, .modern #MenuBuilder .dijitCalendarNextMonth .dijitCalendarDateLabel {
+
+    color: #616161;
+
+    border-color: #6D6E71;
+
+}
+ 
+.modern #TradeCalendarPortlet .dijitCalendarPreviousMonth, .modern #TradeCalendarPortlet .dijitCalendarNextMonth,
+
+.modern #MenuBuilder .dijitCalendarPreviousMonth, .modern #MenuBuilder .dijitCalendarNextMonth {
+
+    background-color: #6D6E71;
+
+    background-image: none;
+
+    border-bottom: solid 1px #D9D9D9;
+
+}
+ 
+#MenuBuilder .dijitCalendarDayLabelTemplate, #TradeCalendarPortlet .dijitCalendarDayLabelTemplate {
+
+    background: #f2f7f8 !important;
+
+}
+ 
+.modern #MenuBuilder .dijitCalendarCurrentDate, .modern #TradeCalendarPortlet .dijitCalendarCurrentDate {
+
+    background-color: #91DFDA;
+
+}
+ 
+.modern #MenuBuilder .dijitCalendarCurrentDate .dijitCalendarDateLabel,
+
+.modern #TradeCalendarPortlet .dijitCalendarCurrentDate .dijitCalendarDateLabel {
+
+    color: #fff;
+
+}
+ 
+.modern #TradeCalendarPortlet .dijitCalendarSelectedYear, .modern #TradeCalendarPortlet .dijitCalendarSelectedDate,
+
+	.modern #default .dijitCalendarSelectedYear, .modern #default .dijitCalendarSelectedDate,
+
+	.modern #MenuBuilder .dijitCalendarSelectedYear, .modern #MenuBuilder .dijitCalendarSelectedDate
+
+	{
+
+	background-color: #91DFDA;
+
+	color: white;
+
+}
+ 
+.modern #MenuBuilder .dijitCalendarContainer th, .modern #TradeCalendarPortlet .dijitCalendarContainer th
+
+	{
+
+	background: #ffffff;
+
+}
+ 
+.modern #MenuBuilder .dijitCalendarHoveredDate .dijitCalendarDateLabel,
+
+.modern #TradeCalendarPortlet .dijitCalendarHoveredDate .dijitCalendarDateLabel {
+
+  background-color: #007EDD;
+
+  border: solid 1px #007EDD;
+
+}
+ 
+.modern #MenuBuilder .dijitCalendarNextYearHover, .modern #MenuBuilder .dijitCalendarPreviousYearHover,
+
+.modern #TradeCalendarPortlet .dijitCalendarNextYearHover, .modern #TradeCalendarPortlet .dijitCalendarPreviousYearHover {
+
+  background-color: #26A2FF;
+
+}
+
+/* Homepage calendar css End */
+ 
+body {
+
+	display: none;
+
+	line-height: 1.125em;
+
+	background: #ffffff;
+
+	color: #616161;
+
+	-webkit-text-size-adjust: 100%;
+
+	-ms-text-size-adjust: 100%;
+
+	margin: 0px;
+
+}
+ 
+#tableHeader {
+
+	background-color: #91DFDA;
+
+    color: #FFFFFF;
+
+}
+
+#tableRow {
+
+    background-color: #f2f7f8;
+
+    color: #616161;
+
+}
+ 
+.moderncolor {
+
+	background-color: #91DFDA;
+
+    color: #616161;
+
+}
+
+.referenceTable {
+
+	background-color: #91DFDA;
+
+    color: #616161;
+
+}
+
+.permissions {
+
+	background-color: #FFFFFF;
+
+}
+ 
+#popupscreen .toplevel-header h2 {
+
+	padding: 2px 4px 0 4px;
+
+}
+ 
+#GTPRootPortlet .column-wrapper label, #GTPRootPortlet .column-wrapper .label {
+
+    width: 170px !important;
+
+}
+ 
+#GTPRootPortlet .inlineBlockNoLabel .label, #GTPRootPortlet .inlineBlockNoLabel label {
+
+    width: 0 !important;
+
+    margin-right: 0 !important;
+
+}
+ 
+.userAccountsTableCellOdd {
+
+    background: none repeat scroll 0 0 #91DFDA;
+
+    color: #616161;
+
+}
+ 
+#BankDefaultContent .para .icon img {
+
+    width: 116px;
+
+    height: 64px;
+
+    margin-left: -26px;
+
+}
+ 
+#BankDefaultContent .para .paracontent {
+
+    margin-left: 80px;
+
+}
+ 
+.amendNarrativeButtons {
+
+	margin-left:  221px !important;
+
+}
+ 
+.amendNarrativeButtons .dijit.dijitReset.dijitInline.dijitButton {
+
+    margin-left: 0.2em;
+
+}
+ 
+.modern span.dijit.dijitReset.dijitInline.noprint.noborder.imgButton.dijitButton {
+
+    margin-right: -1.5em;
+
+}
+ 
+.cancelButton {
+
+    position: initial !important;
+
+}
+ 
+.claro .dijitButtonText{
+
+	font-size: 15px;
+
+}
+ 
+.field{
+
+	font-size: 14px;
+
+}
+ 
+.header {
+
+    margin-top: 20px;
+
+    margin-bottom: -50px;
+
+}
+ 
+.base .tree-product-menu-container .dijitTreeContainer .dijitTreeNode .dijitTreeContainer .dijitTreeNode .dijitTreeContainer {
+
+    background: none !important;
+
+}
+ 
+.tree-product-menu-container .dijitTreeContainer .dijitTreeNode .dijitTreeContainer .dijitTreeNode .dijitTreeContainer .dijitTreeNode .dijitTreeRow.dijitTreeRowSelected {
+
+    background: none repeat scroll 0 0 transparent !important;
+
+    border-left: 0px none !important;
+
+    border-bottom: none !important; 
+
+    color: #121212 !important;
+
+    font-weight: normal;
+
+    margin: 0px;
+
+    margin-left: 6px;
+
+    margin-right: 6px;
+
+    border-radius: 0px;
+
+    border: 0px none;
+
+    padding: 10px !important;
+
+}
+
+.base .tree-product-menu-container .dijitTreeContainer .dijitTreeNode .dijitTreeContainer .dijitTreeNode .dijitTreeContainer .dijitTreeNode .dijitTreeRow.dijitTreeRowSelected {
+
+    /* background: url(../../../../../images/components/leftmenu-selected.png) no-repeat scroll 0px 0px #07274C; */
+
+    border-left: 5px solid #91DFDA !important;
+
+    background-color: white !important;
+
+}
+
+.base .tree-product-menu-container .dijitTreeRow, .dijitTreeContent {
+
+    white-space: normal;
+
+    cursor: pointer;
+
+}
+
+.base .tree-product-menu-container .dijitTreeRow {
+
+    /* background: url(../../../../../images/components/leftmenu-middle-sansarrow.png) no-repeat; */
+
+    background-image: none;
+
+    background-color: #FFF !important;
+
+    color: #2B2B2B !important;
+
+    font-size: 16px;
+
+    padding: 10px !important;
+
+}
+
+.tree-product-menu-container .dijitTreeContainer .dijitTreeNode .dijitTreeContainer .dijitTreeNode .dijitTreeContainer .dijitTreeNode .dijitTreeRow.dijitTreeRowHover,
+
+.tree-product-menu-container .dijitTreeContainer .dijitTreeNode .dijitTreeContainer .dijitTreeNode .dijitTreeContainer .dijitTreeNode .dijitTreeRow.dijitTreeRowSelected.dijitTreeRowHover {
+
+	background: #7d7d7d !important;
+
+	border-left : 5px solid #91DFDA !important;
+
+	border-bottom : none !important;
+
+    color: #FFFFFF !important;
+
+	font-weight:normal;
+
+	margin:0px;
+
+    margin-left: 6px;
+
+    margin-right: 6px;
+
+	border-radius:3px !important;
+
+	border:1px none;
+
+	padding-left:6px !important;
+
+}
+ 
+.base .tree-product-menu-container .dijitTreeContainer .dijitTreeNode .dijitTreeContainer .dijitTreeNode .dijitTreeContainer {
+
+    background: none !important;
+
+    padding-left: 15px;
+
+}
+ 
+.base .tree-product-menu-container .dijitTreeNode .dijitTreeRowSelected {
+
+    padding: 10px !important;
+
+}
+
+.base .tree-product-menu-container .dijitTreeContainer .dijitTreeNode .dijitTreeContainer .dijitTreeNode .dijitTreeContainer .dijitTreeNode .dijitTreeRow.dijitTreeRowSelected {
+
+    border-left: 5px solid #91DFDA !important;
+
+    background-color: white !important;
+
+    background: #d8d8d8 !important;
+
+}
+
+.base .tree-product-menu-container .dijitTreeContainer .dijitTreeNode .dijitTreeContainer .dijitTreeNode .dijitTreeContainer .dijitTreeNode .dijitTreeRow {
+ 
+    margin-left: 20px !important;
+
+}
+ 
+ 
+ 
+.FCC .primaryButton {
+
+    background: #91DFDA !important;
+
+    color: #ffffff !important;
+
+    border-radius: 5px !important;
+
+}
+ 
+.footer-body a {
+
+    color: #666!important;
+
+}
+ 
+ 
+.base .dojoxGridHeader th.dojoxGridCell {
+
+    background: none repeat scroll 0 0 #cccdcf !important;
+
+    color: black !important;
+
+}
+ 
+ 

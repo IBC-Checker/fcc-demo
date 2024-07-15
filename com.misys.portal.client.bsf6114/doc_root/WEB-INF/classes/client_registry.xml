@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<resources>
+    <!-- Localization -->
+	<!-- Core Application -->
+ 	<resource type="localization">client/localization/client</resource>
+ 	<!-- Codes -->
+	<resource type="localization">client/localization/client_codes</resource>
+	<resource type="openapi">openapi/action/OpenAPI_HijriDate_Action.xml</resource>
+
+</resources>

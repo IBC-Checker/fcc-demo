@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Misys Trade Portal Interfaces Schema Copyright (c) 2000-2014 Misys (http://www.misys.com) 
+	All Rights Reserved. -->
+<interfaces xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.misys.com/portal/interfaces/xsd/interfaces.xsd">
+<!-- Do not change the standard interface files. Instead, put you own interfaces in this file to override the standard values. -->
+<interface name="accountwebserviceinterface" description="Account webservice">
+	<component name="environmentreader">
+		<component name="GetAccountWebservice"/>
+	</component>		
+</interface>
+
+<interface name="sendsmssubmittransactionotp" description="OTP for submitting transaction by SMS">
+        <component name="environmentreader">          
+            <component name="sendsms" />
+        </component>
+     </interface>
+
+<bundle name="sendSMSSubmitTransactionOtp">
+    <interface failsafe="true" asynchronous="true">sendsmssubmittransactionotp</interface>
+</bundle>
+
+
+<bundle name="OpenApproveCustomerAccountBSFMC">
+		<interface asynchronous="true">staticdataxmlout</interface>
+		<interface asynchronous="true">mhubenablexmlout</interface>
+		<interface asynchronous="true">mhubloginpwdprintout</interface>
+		<interface asynchronous="true">essenceenablexmlout</interface>
+		<interface failsafe="true" asynchronous="true">sendmailuserparam</interface>
+		<interface failsafe="true" asynchronous="true">sendmailpassword</interface>
+		<interface failsafe="true" asynchronous="true">sendmailCounterpartyActivated</interface>
+		<interface failsafe="true" asynchronous="true">historicalloansrequestor</interface>
+		<!--  <interface failsafe="true" asynchronous="true">liquidityfeatureprocessor</interface>
+		<interface failsafe="true" asynchronous="false">liquidityaccountprocessor</interface>
+		<interface failsafe="true" asynchronous="false">liquidityagreementlistprocessor</interface>
+		<interface failsafe="true" asynchronous="false">liquidityagreementdetailprocessor</interface>	
+		<interface failsafe="true" asynchronous="false">liquidityexecutiondetailprocessor</interface>
+		<interface failsafe="true" asynchronous="true">liquidityexecutionmovementprocessor</interface>
+		<interface failsafe="true" asynchronous="true">liquidityagreementscheduleprocessor</interface>	 -->
+		<interface failsafe="true" asynchronous="true">permissionchangefrombank</interface> 
+		<interface failsafe="true" asynchronous="true">accountwebserviceinterface</interface>	
+	</bundle>
+</interfaces>

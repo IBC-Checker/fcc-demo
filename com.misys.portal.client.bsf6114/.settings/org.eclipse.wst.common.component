@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="com.misys.portal.client.bsf6114">
+        <wb-resource deploy-path="/" source-path="/doc_root" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/resources"/>
+        <wb-resource deploy-path="/config" source-path="/app_data/config"/>
+        <wb-resource deploy-path="/" source-path="/warcontent"/>
+        <property name="context-root" value="com.misys.portal.client.bsf6114"/>
+        <property name="java-output-path" value="/com.misys.portal.client.bsf6114/bin"/>
+    </wb-module>
+</project-modules>
