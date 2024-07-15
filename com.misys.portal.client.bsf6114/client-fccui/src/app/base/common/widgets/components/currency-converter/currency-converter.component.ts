@@ -16,7 +16,7 @@ export class CurrencyConverterComponent implements OnInit {
   curRequest: CurrencyRequest = new CurrencyRequest();
   selectedCurrency;
   calculatedAmount: number;
-
+  //This is change number 1
   fromCurrency: any;
   toCurrency: any ;
   fromAmount = '100';
